@@ -1,0 +1,18 @@
+var
+  Gun : Integer;
+{
+    Gun = 6;
+    
+    case(Gun) of
+    {
+      1: ShowMessage('Pazartesi');
+      2: ShowMessage('Salı');
+      3: ShowMessage('Çarşamba');
+      4: ShowMessage('Perşembe');
+      5: ShowMessage('Cuma');
+      6: ShowMessage('Cumartesi');
+      7: ShowMessage('Pazar');
+    else
+      ShowMessage('Geçersiz sayı girişi!');
+    } 
+}

@@ -1,0 +1,30 @@
+var
+  MyForm : TCLForm;
+  MyButton : TCLButton;
+  MyLabel : TCLLabel;
+  
+void fontDegistir;
+{
+  MyLabel.TextSettings.Font.Size = 12;
+  MyLabel.TextSettings.Font.Style = [fsItalic, fsUnderline];
+  MyLabel.TextSettings.FontColor = clAlphaColor.clHexToColor('#fb1313');
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyLabel = MyForm.AddNewLabel(MyForm,'MyLabel', 'Merhaba Dünya!');
+  MyLabel.Align = AlCenter;
+  MyLabel.Width = 300;
+  MyLabel.Height = 100;
+  MyLabel.StyledSettings = ssFamily;
+  MyLabel.TextSettings.Font.Size = 30;
+  MyLabel.TextSettings.Font.Style = [fsBold];
+
+  
+  MyButton = MyForm.AddNewButton(MyForm,'MyButton','Font Değiştir');
+  MyButton.Align = alBottom;
+  MyButton.Height = 80;
+  MyForm.AddNewEvent(MyButton,tbeOnClick,'fontDegistir');
+  MyForm.Run;
+}

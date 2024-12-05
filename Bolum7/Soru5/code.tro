@@ -1,0 +1,10 @@
+var
+  Mevsimler: array[4] of String;
+  I : integer;
+ 
+{
+  Mevsimler = ['Sonbahar', 'Yaz', 'İlkbahar', 'Kış'];
+  
+  for(I=0 to Length(Mevsimler)-1)
+    ShowMessage(Mevsimler[I]);
+}

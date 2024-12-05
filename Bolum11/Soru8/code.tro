@@ -1,0 +1,22 @@
+var
+  MyForm : TCLForm;
+  MyImage : TCLImage;
+
+void ResmeTiklandi;
+{
+  ShowMessage('Bu bir mesaj kutusudur.');
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyImage = MyForm.AddNewImage(MyForm,'MyImage');
+  MyImage.Align = alCenter;
+  MyImage.Width = 200;
+  MyImage.Height = 200;
+  
+  MyForm.SetImage(MyImage,'https://clomosy.com/demos/bg.png');
+  
+  MyForm.AddNewEvent(MyImage,tbeOnClick,'ResmeTiklandi');
+  MyForm.Run;
+}

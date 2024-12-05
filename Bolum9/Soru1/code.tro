@@ -1,0 +1,19 @@
+var
+  KullaniciTarihi: String;
+  Tarih: TclDateTime;
+
+{
+  try
+    // Tarih girdisi almak için doğrudan bir değer simüle edelim
+    KullaniciTarihi = '26.11.2024'; // Manuel tarih girdisi
+
+    // Tarih formatına dönüştür
+    Tarih = StrToDateTime(KullaniciTarihi);
+
+    // Eğer dönüştürme başarılı olursa mesaj göster
+    ShowMessage('Girilen tarih başarıyla dönüştürüldü: ' + DateTimeToStr(Tarih));
+  except
+    // Hata durumunda anlamlı bir mesaj göster
+    ShowMessage('Hata! Geçersiz tarih formatı girdiniz. Lütfen gg.aa.yyyy formatında bir tarih girin.');
+  }
+}

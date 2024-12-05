@@ -1,0 +1,10 @@
+var
+  Sayi1, Sayi2 : Integer;
+
+{
+  Sayi1 = 20;
+  Sayi2 = -5;
+  
+  if ((Sayi1 >=0) || (Sayi2>=0))
+  ShowMessage('Sayılardan biri pozitiftir.');
+}

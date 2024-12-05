@@ -1,0 +1,25 @@
+var
+  Mevsimler: String;
+
+{
+    Mevsimler = 'sonbahar';
+    
+    if (Mevsimler == 'ilkbahar')
+    {
+      ShowMessage('Doğa uyanıyor, çiçekler açıyor...');
+    }
+    else if(Mevsimler == 'sonbahar')
+    {
+      ShowMessage('Yapraklar dökülüyor, rüzgar serin...');
+    }
+    else if (Mevsimler == 'yaz')
+    {
+      ShowMessage('Güneş sıcak, günler uzun...');
+    }
+    else if (Mevsimler == 'kış')
+    {
+      ShowMessage('Beyaz bir örtü, sıcak bir çay...');
+    }
+    else
+      ShowMessage('Tanımsız veri girişi...');
+}

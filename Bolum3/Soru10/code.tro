@@ -1,0 +1,9 @@
+var
+  dolar, euro : Float;
+
+{
+  dolar = 100;
+  euro = 0.85 * dolar;
+  
+  ShowMessage(euro);
+}

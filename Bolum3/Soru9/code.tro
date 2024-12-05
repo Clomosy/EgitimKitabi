@@ -1,0 +1,9 @@
+var
+  gram, ons : Float; 
+
+{
+  gram = 500;
+  ons = 0.03527396 * gram;
+  
+  ShowMessage(ons);
+}

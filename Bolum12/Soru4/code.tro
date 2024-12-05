@@ -1,0 +1,21 @@
+var
+  MyForm : TCLForm;
+  MyButton : TCLButton;
+
+void resimEkle;
+{
+  MyForm.SetFormBGImage('https://clomosy.com/theme/SurveyStyle5.png');
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyButton = MyForm.AddNewButton(MyForm,'MyButton', 'Arka Plana Resim Ekle');
+  MyButton.Align = alCenter;
+  MyButton.Width = MyForm.clWidth - 100;
+  
+  MyForm.AddNewEvent(MyButton,tbeOnClick,'resimEkle');
+  
+  MyForm.Run;
+  
+}

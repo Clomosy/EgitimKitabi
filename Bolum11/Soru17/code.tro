@@ -1,0 +1,81 @@
+var
+  MyForm : TCLForm;
+  KaydetButton : TCLButton;
+  UrunAdEdit, UrunFiyatEdit: TCLEdit;
+  AnaPanel, UrunAdPanel,UrunFiyatPanel, ButtonPanel : TCLPanel;
+  UrunAdLbl, UrunFiyatLbl : TCLLabel;
+  Image1 : TCLImage;
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  AnaPanel = MyForm.AddNewPanel(MyForm,'AnaPanel');
+  AnaPanel.Align = AlCenter;
+  AnaPanel.Width = MyForm.clWidth - 50;
+  AnaPanel.Height = MyForm.clHeight - 300;
+  
+  Image1 = MyForm.AddNewImage(AnaPanel, 'Image1');
+  Image1.Align = AlMostTop;
+  Image1.Margins.Left = AnaPanel.Width / 3;
+  Image1.Margins.Right = AnaPanel.Width / 3;
+  Image1.Margins.Top = 10;
+  Image1.Height = AnaPanel.Height / 5;
+  MyForm.SetImage(Image1,'https://clomosy.com/learn/avatar.png');
+  
+  UrunAdPanel = MyForm.AddNewPanel(AnaPanel,'UrunAdPanel');
+  UrunAdPanel.Align = AlMostTop;
+  UrunAdPanel.Height = AnaPanel.Height / 5;
+  UrunAdPanel.Margins.Top = 10;
+  UrunAdPanel.Margins.Left = 5;
+  UrunAdPanel.Margins.Right = 5;
+  
+  UrunAdLbl = MyForm.AddNewLabel(UrunAdPanel,'UrunAdLbl','Ürün Adı: ');
+  UrunAdLbl.Align = AlLeft;
+  UrunAdLbl.Width = UrunAdPanel.Width / 4;
+  UrunAdLbl.Margins.Bottom = 5;
+  UrunAdLbl.Margins.Top = 5;
+  UrunAdLbl.Margins.Left = 5;
+  
+  UrunAdEdit = MyForm.AddNewEdit(UrunAdPanel,'UrunAdEdit', 'Ürün Adı Giriniz...');
+  UrunAdEdit.Align = AlRight;
+  UrunAdEdit.Width = UrunAdPanel.Width / 2;
+  UrunAdEdit.Margins.Bottom = 5;
+  UrunAdEdit.Margins.Top = 5;
+  UrunAdEdit.Margins.Right = 5;
+  
+  UrunFiyatPanel = MyForm.AddNewPanel(AnaPanel,'UrunFiyatPanel');
+  UrunFiyatPanel.Align = AlTop;
+  UrunFiyatPanel.Height = AnaPanel.Height / 5;
+  UrunFiyatPanel.Margins.Top = 10;
+  UrunFiyatPanel.Margins.Left = 5;
+  UrunFiyatPanel.Margins.Right = 5;
+  
+  UrunFiyatLbl = MyForm.AddNewLabel(UrunFiyatPanel,'UrunFiyatLbl','Ürün Fiyatı: ');
+  UrunFiyatLbl.Align = AlLeft;
+  UrunFiyatLbl.Width = UrunAdPanel.Width / 3 - 10;
+  UrunFiyatLbl.Margins.Bottom = 5;
+  UrunFiyatLbl.Margins.Top = 5;
+  UrunFiyatLbl.Margins.Left = 5;
+  
+  UrunFiyatEdit = MyForm.AddNewEdit(UrunFiyatPanel,'UrunFiyatEdit', 'Ürün Fiyatı Giriniz...');
+  UrunFiyatEdit.Align = AlRight;
+  UrunFiyatEdit.Width = UrunAdPanel.Width / 2;
+  UrunFiyatEdit.Margins.Bottom = 5;
+  UrunFiyatEdit.Margins.Top = 5;
+  UrunFiyatEdit.Margins.Right = 5;
+  
+  ButtonPanel = MyForm.AddNewPanel(AnaPanel,'ButtonPanel');
+  ButtonPanel.Align = alMostBottom;
+  ButtonPanel.Height = AnaPanel.Height / 5;
+  ButtonPanel.Margins.Top = 10;
+  ButtonPanel.Margins.Bottom = 10;
+  ButtonPanel.Margins.Left = 5;
+  ButtonPanel.Margins.Right = 5;
+
+  KaydetButton = MyForm.AddNewButton(ButtonPanel,'KaydetButton','Bilgileri Kaydet');
+  KaydetButton.Align = alRight;
+  KaydetButton.Width =ButtonPanel.Width / 2;
+  KaydetButton.Margins.Left = 120;
+  
+  MyForm.Run;
+}

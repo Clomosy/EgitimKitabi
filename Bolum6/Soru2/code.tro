@@ -1,0 +1,10 @@
+var
+  I : Integer;
+  SayininKaresi : Integer;
+{
+  for(I = 1 to 10)
+  {
+    SayininKaresi = I * I;
+    ShowMessage(IntToStr(I) +'`n' + ' karesi:'+ IntToStr(SayininKaresi));
+  }
+}

@@ -1,0 +1,19 @@
+var
+  MyForm : TCLForm;
+  KapatButton : TCLButton;
+  
+void KapatButtonTikla;
+{
+  MyForm.clHide;
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  KapatButton = MyForm.AddNewButton(MyForm,'KapatButton','Formu Kapat');
+  KapatButton.Align = alBottom;
+  KapatButton.Height = 80;
+  
+  MyForm.AddNewEvent(KapatButton,tbeOnClick,'KapatButtonTikla');
+  MyForm.Run;
+}

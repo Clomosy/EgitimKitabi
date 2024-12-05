@@ -1,0 +1,10 @@
+var
+  Ad, Soyad, AdSoyad : String;
+
+{
+  Ad = 'Arda';
+  Soyad = ' Güler';
+  AdSoyad = Ad + Soyad;
+  
+  ShowMessage('Kullanıcı Bilgisi = ' + AdSoyad);
+}

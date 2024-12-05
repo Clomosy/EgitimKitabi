@@ -1,0 +1,26 @@
+var
+  MyForm : TCLForm;
+  MyImage : TCLImage;
+  MyButton : TCLButton;
+  
+void ResimDegistir;
+{
+  MyForm.SetImage(MyImage,'https://clomosy.com/educa/bg2.png');
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyImage = MyForm.AddNewImage(MyForm,'MyImage');
+  MyImage.Align = alCenter;
+  MyImage.Width = 200;
+  MyImage.Height = 400;
+  
+  MyForm.SetImage(MyImage,'https://clomosy.com/demos/bg.png');
+  
+  MyButton = MyForm.AddNewButton(MyForm,'MyButton', 'Resmi Değiştir');
+  MyButton.Align = alBottom;
+  MyButton.Height = 80;
+  MyForm.AddNewEvent(MyButton,tbeOnClick,'ResimDegistir');
+  MyForm.Run;
+}

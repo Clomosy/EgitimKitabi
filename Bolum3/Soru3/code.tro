@@ -1,0 +1,18 @@
+var
+  OgrencininYasi : Integer;
+  UrununFiyati : Float;
+  KitabinAdi, Tarih :String;
+
+{
+  OgrencininYasi = 22;
+  ShowMessage(OgrencininYasi);
+  
+  UrununFiyati = 650.99;
+  ShowMessage(UrununFiyati);
+  
+  KitabinAdi = 'Martin Eden';
+  ShowMessage(KitabinAdi);
+  
+  Tarih = '25.11.2024';
+  ShowMessage(Tarih);
+}

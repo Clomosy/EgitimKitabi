@@ -1,0 +1,10 @@
+var
+sehirAdi : String;
+
+{
+  sehirAdi = 'İstanbul';
+  ShowMessage(sehirAdi);
+  
+  sehirAdi = 'Ankara';
+  ShowMessage(sehirAdi);
+}

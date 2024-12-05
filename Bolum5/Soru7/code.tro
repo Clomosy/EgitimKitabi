@@ -1,0 +1,16 @@
+var
+  KullaniciAdi, Sifre : String;
+ 
+{
+  KullaniciAdi = 'admin';
+  Sifre = '123456';
+  
+      if(KullaniciAdi == 'admin') 
+      {
+        if(Sifre == '1234')
+          ShowMessage('Giriş Yapıldı...');
+        else
+          ShowMessage('Hata: Şifre yanlış!');
+      }else
+        ShowMessage('Hata: Kullanıcı adı yanlış!');
+}

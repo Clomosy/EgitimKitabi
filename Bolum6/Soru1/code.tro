@@ -1,0 +1,8 @@
+var
+ Sayi, I : Integer;
+{
+  Sayi = 20;
+  
+  for(I = Sayi downto 1)
+    ShowMessage(I);
+}

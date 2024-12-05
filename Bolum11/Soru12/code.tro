@@ -1,0 +1,34 @@
+var
+  MyForm : TCLForm;
+  MyLayout : TClLayout;
+  PanelIciButon2: TCLLabel;
+  PanelIciButon, BilesenGizleBtn, BilesenBoyutDegistir : TCLButton;
+  
+void BilesenBoyutDegistirTikla;
+{
+  PanelIciButon.Height = MyLayout.Height / 3;
+  PanelIciButon2.Height = MyLayout.Height / 3;
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyLayout = MyForm.AddNewLayout(MyForm,'MyLayout');
+  MyLayout.Align = alCenter;
+  MyLayout.Width = MyForm.clWidth / 2;
+  MyLayout.Height = MyForm.clHeight / 2;
+  
+  PanelIciButon = MyForm.AddNewButton(MyLayout,'PanelIciButon', 'Panel İçi Buton1');
+  PanelIciButon.Align = alTop;
+  PanelIciButon.Height = MyLayout.Height / 4;
+  
+  PanelIciButon2 = MyForm.AddNewButton(MyLayout,'PanelIciButon2','Panel İçi Buton2');
+  PanelIciButon2.Align = alBottom;
+  PanelIciButon2.Height = MyLayout.Height / 4;
+  
+  BilesenBoyutDegistir = MyForm.AddNewButton(MyForm,'BilesenBoyutDegistir','Bileşenlerin Boyutunu Değiştir');
+  BilesenBoyutDegistir.Align = alBottom;
+  BilesenBoyutDegistir.Height = 80;
+  MyForm.AddNewEvent(BilesenBoyutDegistir,tbeOnClick,'BilesenBoyutDegistirTikla');
+  MyForm.Run;
+}

@@ -1,0 +1,21 @@
+var
+  Renk: String;
+
+{
+    Renk = 'kırmızı';
+
+    if (Renk == 'yeşil')
+    {
+      ShowMessage('Yeşil ışık - Geçebilirsiniz.');
+    }
+    else if (Renk == 'kırmızı')
+    {
+      ShowMessage('Kırmızı ışık - Geçilemez.');
+    }
+    else if (Renk == 'sarı')
+    {
+      ShowMessage('Sarı ışık - Dikkatli olmalısınız.');
+    }
+    else
+      ShowMessage('Geçersiz renk girdiniz! Lütfen Yeşil, Kırmızı veya Sarı giriniz.');
+}

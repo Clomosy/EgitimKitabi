@@ -1,0 +1,30 @@
+var
+  Alan, Cevre: Float;
+  Pi, Sayi : Integer;
+
+// Dairenin alanını hesaplayan fonksiyon
+function DaireninAlaniHesapla(Yaricap,PiDegeri: Float);
+{
+  // Alan hesapla
+  Result = PiDegeri * Yaricap * Yaricap;
+}
+
+// Dairenin çevresini hesaplayan fonksiyon
+function DaireninCevresiHesapla(Yaricap,PiDegeri: Float);
+{
+  // Çevre hesapla
+  Result = 2 * PiDegeri * Yaricap;
+}
+
+// Ana program
+{
+  Sayi = 5;
+  Pi = 3.14159;
+  // Fonksiyonları çağır ve sonuçları al
+  Alan = DaireninAlaniHesapla(Sayi,Pi);
+  Cevre = DaireninCevresiHesapla(Sayi,Pi);
+
+  // Sonuçları göster
+  ShowMessage('Dairenin alanı: ' + FloatToStr(Alan));
+  ShowMessage('Dairenin çevresi: ' + FloatToStr(Cevre));
+}

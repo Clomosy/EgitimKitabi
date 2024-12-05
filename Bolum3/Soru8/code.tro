@@ -1,0 +1,9 @@
+var
+  litre, mililitre : Float;
+
+{
+  litre = 2;
+  mililitre = 1000 * litre;
+  
+  ShowMessage(mililitre);
+}

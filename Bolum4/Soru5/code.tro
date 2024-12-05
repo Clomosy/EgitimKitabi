@@ -1,0 +1,16 @@
+var
+Sayi: Ingeter;
+
+{
+  Sayi = 9
+  
+ if (Sayi mod 2 == 0)
+  {
+   ShowMessage('Sayı çiftir.');
+  } 
+  
+ else
+  {
+   ShowMessage('Sayı tektir.');   
+  }
+}

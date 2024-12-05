@@ -1,0 +1,16 @@
+var
+  MyForm : TCLForm;
+  MyImage : TCLImage;
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyImage = MyForm.AddNewImage(MyForm,'MyImage');
+  MyImage.Align = AlCenter;
+  MyImage.Width = 200;
+  MyImage.Height = 400;
+  
+  MyForm.SetImage(MyImage,'https://clomosy.com/demos/bg.png');
+  
+  MyForm.Run;
+}

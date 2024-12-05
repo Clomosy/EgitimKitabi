@@ -1,0 +1,19 @@
+var
+  MyForm : TclForm;
+  GirisYapButton : TclButton;
+
+void AnaEkranaGec;
+{
+  Clomosy.RunUnit('uAnaEkran');
+  MyForm.clHide;
+}
+{
+  MyForm = TclForm.Create(Self);
+  MyForm.clSetCaption('Giriş Ekranı');
+  
+  GirisYapButton = MyForm.AddNewButton(MyForm,'GirisYapButton', 'Giriş Yap');
+  GirisYapButton.Align = alCenter;
+  GirisYapButton.Width = 150;
+  MyForm.AddNewEvent(GirisYapButton,tbeOnClick,'AnaEkranaGec');
+  MyForm.Run;
+}

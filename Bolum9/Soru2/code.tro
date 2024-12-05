@@ -1,0 +1,16 @@
+var
+  Sayi: Integer;
+
+{
+  Sayi = -36; 
+  
+  // Negatif sayı kontrolü
+  if (Sayi < 0)
+  {
+    ShowMessage('Hata: Sayı negatif bir sayıdır.');
+  } else
+  {
+    // Karekökü hesapla ve sonucu göster
+    ShowMessage('Girdiğiniz sayının karekökü: ' + Sqrt(Sayi));
+  }
+}

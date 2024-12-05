@@ -1,0 +1,12 @@
+var
+  Sayi1, Sayi2 : Integer;
+
+{
+  Sayi1 = 512;
+  Sayi2 = 6841;
+  
+  if (Sayi1 > Sayi2)
+    ShowMessage('Sayi1, Sayi2''den daha büyük')
+  else
+    ShowMessage('Sayi2, Sayi1''den daha büyük.');
+}

@@ -1,0 +1,11 @@
+var
+  Sayi : Integer;
+
+{
+  Sayi = 2; 
+  
+  if (Sayi mod 2 == 0)
+    ShowMessage('Sayı çifttir')
+  else 
+    ShowMessage('Sayı tektir');
+}

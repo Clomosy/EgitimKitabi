@@ -1,0 +1,28 @@
+var
+  MyForm : TCLForm;
+  MyEdit : TCLEdit;
+  MyLabel : TCLLabel;
+  
+void LabelaYaz;
+{
+  MyLabel.Text = MyEdit.Text;
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyEdit = MyForm.AddNewEdit(MyForm,'MyEdit', 'Metin Giriniz...');
+  MyEdit.Align = alCenter;
+  MyEdit.Margins.Bottom = 200;
+  MyEdit.Height = 50;
+  MyEdit.Width = 200;
+  
+  MyForm.AddNewEvent(MyEdit,tbeOnKeyUp,'LabelaYaz');
+  
+  MyLabel = MyForm.AddNewLabel(MyForm,'MyLabel','');
+  MyLabel.Align = alCenter;
+  MyLabel.Height = 50;
+  MyLabel.Width = 200;
+  
+  MyForm.Run;
+}

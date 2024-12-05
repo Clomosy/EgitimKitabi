@@ -1,0 +1,11 @@
+var
+  Sayi : Integer;
+
+{
+  Sayi = -10;
+  
+  if Sayi > 0 
+    ShowMessage('Sayı Pozitif'); 
+  else 
+    ShowMessage('Sayı negatiftir'); 
+}

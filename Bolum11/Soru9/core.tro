@@ -1,0 +1,35 @@
+var
+  MyForm : TCLForm;
+  myPanel : TCLPanel;
+  panelIciLabel: TCLLabel;
+  panelIciButon, bilesenGizleBtn : TCLButton;
+  
+void bilesenleriGizle;
+{
+  panelIciButon.Visible = False;
+  panelIciLabel.Visible = False;
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  myPanel = MyForm.AddNewPanel(MyForm,'myPanel');
+  myPanel.Align = alCenter;
+  myPanel.Width = MyForm.clWidth / 2;
+  myPanel.Height = MyForm.clHeight / 2;
+  
+  panelIciLabel = MyForm.AddNewLabel(myPanel,'panelIciLabel','Panel İçi Label');
+  panelIciLabel.Align = alTop;
+  panelIciLabel.Height = myPanel.Height / 4;
+  
+  panelIciButon = MyForm.AddNewButton(myPanel,'panelIciButon', 'Panel İçi Buton');
+  panelIciButon.Align = alBottom;
+  panelIciButon.Height = myPanel.Height / 4;
+  
+  bilesenGizleBtn = MyForm.AddNewButton(MyForm,'bilesenGizleBtn','Bileşenleri Gizle');
+  bilesenGizleBtn.Align = alBottom;
+  bilesenGizleBtn.Height = 100;
+  
+  MyForm.AddNewEvent(bilesenGizleBtn,tbeOnClick,'bilesenleriGizle');
+  MyForm.Run;
+}

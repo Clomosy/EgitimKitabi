@@ -1,0 +1,16 @@
+var
+  Sayi1, Toplam: Integer;
+  Sayi2 : String;
+{
+  Sayi1 = 12;
+  Sayi2 = 'ABC'; // Geçersiz giriş simülasyonu.
+  try
+    // Toplama işlemini gerçekleştir
+    Toplam = Sayi1 + Sayi2;
+    
+    // Sonucu göster
+    ShowMessage('Girdiğiniz sayıların toplamı: ' + IntToStr(Toplam));
+  except
+    ShowMessage('Hata! Geçersiz bir giriş yaptınız. Lütfen yalnızca sayısal değerler girin.');
+  }
+}

@@ -1,0 +1,12 @@
+var
+  a, b : Integer;
+
+{
+  a = 20;
+  b = 10;
+  
+  ShowMessage('İki sayının toplamı: ' + IntToStr(a+b));
+  ShowMessage('İki sayının farkı: '+ IntToStr(a-b));
+  ShowMessage('İki sayının çarpımı: ' + IntToStr(a*b));
+  ShowMessage('İki sayının bölümü: '+ IntToStr(a/b));
+}

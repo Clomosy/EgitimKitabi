@@ -1,0 +1,16 @@
+var
+  MyForm : TCLForm;
+  MyPanel : TCLPanel;
+  MyButton : TCLButton;
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyPanel = MyForm.AddNewPanel(MyForm,'MyPanel');
+  MyPanel.Align = alCenter;
+  MyPanel.Width = 200;
+  MyPanel.Height = 400;
+  
+  MyButton = MyForm.AddNewButton(MyPanel,'MyButton','Buton');
+  MyForm.Run;
+}

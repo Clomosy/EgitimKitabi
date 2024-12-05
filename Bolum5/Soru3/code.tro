@@ -1,0 +1,21 @@
+var
+  VizeNotu, FinalNotu : Integer;
+  HesaplananNot : Double;
+
+{
+    VizeNotu = 70;
+    FinalNotu = 80;
+    
+    HesaplananNot = (VizeNotu * 0.4) + (FinalNotu * 0.6);
+    
+    if (HesaplananNot >= 90)
+      ShowMessage('A');
+    else if ((HesaplananNot >= 80) && (HesaplananNot < 90))
+      ShowMessage('B');
+    else if ((HesaplananNot >= 70) && (HesaplananNot < 80)) 
+      ShowMessage('C');
+    else if ((HesaplananNot >= 60)  && (HesaplananNot < 70)) 
+      ShowMessage('D');
+    else
+      ShowMessage('F');
+}

@@ -1,0 +1,45 @@
+var
+  MyForm : TCLForm;
+  AnaPanel, UrunPanel : TCLPanel;
+  UrunAdLbl, UrunFiyatLbl : TCLLabel;
+  UrunImage : TCLImage;
+  VScrollBox : TCLVertScrollBox;
+  I: Integer;
+{
+  MyForm = TCLForm.Create(Self);
+  
+  VScrollBox = MyForm.AddNewVertScrollBox(MyForm,'VScrollBox');
+  VScrollBox.Align = alClient;
+  
+  for (I=1 to 10)
+  {
+    AnaPanel = MyForm.AddNewPanel(VScrollBox,'AnaPanel'+IntToStr(I));
+    AnaPanel.Align = alTop;
+    AnaPanel.Height = 100;
+    AnaPanel.Margins.Bottom = 10;
+    
+    UrunImage = MyForm.AddNewImage(AnaPanel, 'UrunImage'+IntToStr(I));
+    UrunImage.Align = alLeft;
+    UrunImage.Width = 50;
+    UrunImage.Margins.Left = 25;
+    MyForm.SetImage(UrunImage,'https://clomosy.com/learn/avatar.png');
+    
+    UrunPanel = MyForm.AddNewPanel(AnaPanel,'UrunPanel'+IntToStr(I));
+    UrunPanel.Align = alClient;
+    UrunPanel.Margins.Left = 30;
+    UrunPanel.Margins.Top = 10;
+    UrunPanel.Margins.Bottom = 10;
+    
+    UrunAdLbl = MyForm.AddNewLabel(UrunPanel,'UrunAdLbl'+IntToStr(I),'İsim '+IntToStr(I));
+    UrunAdLbl.Align = AlTop;
+    UrunAdLbl.Height = UrunPanel.Height /2;
+    UrunAdLbl.Margins.Left = 5;
+  
+    UrunFiyatLbl = MyForm.AddNewLabel(UrunPanel,'UrunFiyatLbl'+IntToStr(I),'Fiyat '+IntToStr(I));
+    UrunFiyatLbl.Align = alBottom;
+    UrunFiyatLbl.Height = UrunPanel.Height /2;
+    UrunFiyatLbl.Margins.Left = 5;
+  }
+
+  MyForm.Run;
+}

@@ -1,0 +1,28 @@
+var
+  MyForm : TCLForm;
+  MyButton : TCLButton;
+  MyLabel : TCLLabel;
+  
+void bilesenDurumDegistirBtn;
+{
+  if(MyLabel.Visible)
+    MyLabel.Visible = False;
+  else
+    MyLabel.Visible = True;
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyLabel = MyForm.AddNewLabel(MyForm,'MyLabel', 'Merhaba Dünya!');
+  MyLabel.Align = AlCenter;
+  MyLabel.Width = 150;
+  MyLabel.Height = 50;
+
+  MyButton = MyForm.AddNewButton(MyForm,'MyButton','Bileşen Gizle/Göster');
+  MyButton.Align = AlBottom;
+  MyButton.Height = 80;
+  
+  MyForm.AddNewEvent(MyButton,tbeOnClick,'bilesenDurumDegistirBtn');
+  MyForm.Run;
+}

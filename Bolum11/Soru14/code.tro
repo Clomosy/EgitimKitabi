@@ -1,0 +1,25 @@
+var
+  MyForm : TCLForm;
+  EditiTemizleBtn : TCLButton;
+  MyEdit : TCLEdit;
+  
+void EditiTemizle;
+{
+  MyEdit.Text = '';
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyEdit = MyForm.AddNewEdit(MyForm,'MyEdit', 'Metin Giriniz...');
+  MyEdit.Align = alCenter;
+  MyEdit.Width = 150;
+  MyEdit.Height = 35;
+  
+  EditiTemizleBtn = MyForm.AddNewButton(MyForm,'EditiTemizleBtn','Editi Temizle');
+  EditiTemizleBtn.Align = alBottom;
+  EditiTemizleBtn.Height = 80;
+  
+  MyForm.AddNewEvent(EditiTemizleBtn,tbeOnClick,'EditiTemizle');
+  MyForm.Run;
+}

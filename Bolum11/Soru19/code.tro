@@ -1,0 +1,21 @@
+var
+  MyForm : TCLForm;
+  MyButon : TCLButton;
+  I : Integer;
+  OpacityDeger : Float;
+{
+  MyForm = TCLForm.Create(Self);
+  OpacityDeger = 0.9;
+  for(I=1 to 5)
+  {
+    MyButon = MyForm.AddNewButton(MyForm,'MyButon'+IntToStr(I),'Buton '+IntToStr(I));
+    MyButon.Align = alTop;
+    MyButon.Height = 45;
+    MyButon.Width = 150;
+    MyButon.Margins.Bottom = 10;
+    MyButon.Opacity = OpacityDeger;
+    OpacityDeger = OpacityDeger - 0.2;
+  }
+
+  MyForm.Run;
+}

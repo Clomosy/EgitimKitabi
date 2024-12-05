@@ -1,0 +1,92 @@
+var
+HesaplamaForm:TclForm;
+Sayi1Label, Sayi2Label,IslemLabel : TCLLabel;
+HesaplaButton : TCLButton;
+IslemPanel, HesaplaPanel : TCLPanel;
+
+void FormKapat;
+{
+  Clomosy.RunUnit('MainCode');
+}
+void AnaSayfadanAktar;
+{
+  Sayi1Label.Text = callerForm.Sayi1Edit.Text;
+  IslemLabel.Text = callerForm.OperatorLabel.Text;
+  Sayi2Label.Text = callerForm.Sayi2Edit.Text;
+}
+
+void Hesapla;
+var
+  Cevap : String;
+{
+  if(IslemLabel.Text == '+')
+  {
+    Cevap = IntToStr(StrToInt(Sayi1Label.Text) + StrToInt(Sayi2Label.Text));
+  }
+  else if(IslemLabel.Text == '-')
+  {
+   Cevap =  IntToStr(StrToInt(Sayi1Label.Text) - StrToInt(Sayi2Label.Text));
+  }
+  else if(IslemLabel.Text == '*')
+  {
+    Cevap =  IntToStr(StrToInt(Sayi1Label.Text) * StrToInt(Sayi2Label.Text));
+  }
+  else
+  {
+    Cevap =  IntToStr(StrToInt(Sayi1Label.Text) / StrToInt(Sayi2Label.Text));
+  }
+  callerForm.SonucLabel.Text = 'Sonuç: '+ Cevap;
+  
+  ShowMessage('İşlem Sonucu Ana Sayfaya Yazdırıldı. Yönlendiriliyorsunuz...');
+  callerForm.clShow;
+  HesaplamaForm.clHide;
+  
+}
+
+{
+  HesaplamaForm = TCLForm.Create(Self);
+  
+  IslemPanel = HesaplamaForm.AddNewPanel(HesaplamaForm,'IslemPanel');
+  IslemPanel.align = alMostTop;
+  IslemPanel.height = HesaplamaForm.clWidth / 4;
+  IslemPanel.margins.Top = 20;
+  
+  Sayi1Label = HesaplamaForm.AddNewLabel(IslemPanel,'Sayi1Label',' ');
+  Sayi1Label.align = alLeft;
+  Sayi1Label.margins.left = 40;
+  Sayi1Label.width = (IslemPanel.Width*30)/100;
+  Sayi1Label.styledsettings = ssFamily;
+  Sayi1Label.Textsettings.Font.Size = 24;
+  Sayi1Label.TextSettings.HorzAlign = taTrailing;
+ 
+  Sayi2Label = HesaplamaForm.AddNewLabel(IslemPanel,'Sayi2Label',' ');
+  Sayi2Label.align = alRight;
+  Sayi2Label.margins.Right = 40;
+  Sayi2Label.width = (IslemPanel.Width*30)/100;
+  Sayi2Label.styledsettings = ssFamily;
+  Sayi2Label.Textsettings.Font.Size = 24;
+  
+  
+  IslemLabel = HesaplamaForm.AddNewLabel(IslemPanel,'IslemLabel','?');
+  IslemLabel.align = alClient;
+  IslemLabel.styledsettings = ssFamily;
+  IslemLabel.Textsettings.Font.Size = 24;
+  IslemLabel.TextSettings.HorzAlign = taCenter;
+  
+
+  HesaplaPanel = HesaplamaForm.AddNewPanel(HesaplamaForm, 'HesaplaPanel');
+  HesaplaPanel.align = alTop;
+  HesaplaPanel.height = HesaplamaForm.clWidth / 4;
+  HesaplaPanel.margins.Top = 20;
+  
+  HesaplaButton = HesaplamaForm.AddNewButton(HesaplaPanel,'HesaplaButton', '=');
+  HesaplaButton.Align = alCenter;
+  HesaplaButton.Height = HesaplaPanel.Height / 2;
+  HesaplaButton.Width = 100;
+  HesaplaButton.styledsettings = ssFamily;
+  HesaplaButton.Textsettings.Font.Size = 24;
+  HesaplamaForm.AddNewEvent(HesaplaButton, tbeOnClick, 'Hesapla');
+  HesaplamaForm.AddNewEvent(HesaplamaForm,tbeOnFormShow,'AnaSayfadanAktar');
+  HesaplamaForm.AddNewEvent(HesaplamaForm,tbeonFormClose, 'FormKapat');
+  HesaplamaForm.Run;
+}

@@ -1,0 +1,23 @@
+//1. Yol
+var
+ilkSayi, ikinciSayi : Integer;
+
+{
+  ilkSayi = 10;
+  ikinciSayi = 20;
+  
+  ShowMessage(ilkSayi + ikinciSayi);
+}
+
+//2. Yol
+/*
+var
+ilkSayi, ikinciSayi, a : Integer;
+ 
+ {
+   ilkSayi = 10;
+   ikinciSayi = 20;
+   a = ilkSayi + ikinciSayi;
+   
+   ShowMessage(a);
+ }

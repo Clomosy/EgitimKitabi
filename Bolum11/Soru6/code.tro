@@ -1,0 +1,23 @@
+var
+  MyForm : TCLForm;
+  MyLayout : TClLayout;
+  MyButton1, MyButton2 : TCLButton;
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyLayout = MyForm.AddNewLayout(MyForm,'MyLayout');
+  MyLayout.Align = alCenter;
+  MyLayout.Width = 200;
+  MyLayout.Height = 400;
+  
+  MyButton1 = MyForm.AddNewButton(MyLayout,'MyButton1', 'Buton1');
+  MyButton1.Align = alCenter;
+  MyButton1.Margins.Bottom = 200;
+  
+  MyButton2 = MyForm.AddNewButton(MyLayout,'MyButton2', 'Buton2');
+  MyButton2.Align = alCenter;
+  MyButton2.Margins.Bottom = 100;
+  
+  MyForm.Run;
+}

@@ -1,0 +1,32 @@
+// Karenin alanını hesaplayan prosedür
+void KareninAlaniHesapla(Kenar: Integer);
+var
+  Alan: Integer;
+{
+  // Alanı hesapla
+  Alan = Kenar * Kenar;
+
+  // Sonucu göster
+  ShowMessage('Karenin alanı: ' + IntToStr(Alan));
+}
+
+// Dik üçgenin alanını hesaplayan prosedür
+void DikUcgenAlaniHesapla(KisaKenar, UzunKenar: Integer);
+var
+  Alan: Double;
+{
+  // Alanı hesapla
+  Alan = (KisaKenar * UzunKenar) / 2;
+
+  // Sonucu göster
+  ShowMessage('Dik üçgenin alanı: ' + FloatToStr(Alan));
+}
+
+// Ana program
+{
+  // Karenin alanını hesapla
+  KareninAlaniHesapla(5); // 5 birim kenar uzunluğu
+
+  // Dik üçgenin alanını hesapla
+  DikUcgenAlaniHesapla(3, 4); // 3 ve 4 birim kısa ve uzun kenar uzunlukları
+}

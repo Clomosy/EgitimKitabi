@@ -1,0 +1,28 @@
+var
+  MyForm : TCLForm;
+  MyEdit : TCLEdit;
+  KontrolButon : TCLButton;
+  
+void KontrolEt;
+{
+  if (MyEdit.Text == '')
+    ShowMessage('Edit içi boş! Değer giriniz.');
+  else
+    ShowMessage('Editin içeriği: '+MyEdit.Text);
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyEdit = MyForm.AddNewEdit(MyForm,'MyEdit','Metin Giriniz...');
+  MyEdit.Align = alCenter;
+  MyEdit.Width = 150;
+  MyEdit.Height = 35;
+  
+  KontrolButon = MyForm.AddNewButton(MyForm,'KontrolButon','Edit İçini Kontrol Et');
+  KontrolButon.Align = alBottom;
+  KontrolButon.Height = 80;
+  
+  MyForm.AddNewEvent(KontrolButon,tbeOnClick,'KontrolEt');
+  MyForm.Run;
+}

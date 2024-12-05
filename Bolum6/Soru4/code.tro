@@ -1,0 +1,9 @@
+var
+  I : integer;
+{
+  for (I = 1 to 10)
+  {
+    if(I mod 2 == 0)
+      ShowMessage('Çift sayı: '+ IntToStr(I));
+  }
+}

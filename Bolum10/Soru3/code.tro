@@ -1,0 +1,18 @@
+var
+  AnaForm: TclForm;
+  TakimRenk1, TakimRenk2: String;
+
+{
+  // Form oluşturuluyor
+  AnaForm = TclForm.Create(Self);
+
+  // Örnek: Takım seçimine göre renk ataması
+  TakimRenk1 = '#FFFF00';
+  TakimRenk2 = '#000080';
+
+  // Formun arka planına dikey renk geçişi uygulanıyor
+  AnaForm.SetFormColor(TakimRenk1, TakimRenk2, clGVertical);
+
+  // Form başlatılıyor
+  AnaForm.Run;
+}

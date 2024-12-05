@@ -1,0 +1,14 @@
+var
+  KimlikKarti, OgretmenIzni, GirisYapilabilir : Boolean;
+
+{
+  KimlikKarti = False;
+  OgretmenIzni = True;
+  
+  GirisYapilabilir = (KimlikKarti || OgretmenIzni);
+  
+  if GirisYapilabilir
+    ShowMessage('Kütüphaneye giriş yapabilirsiniz.');
+  else
+    ShowMessage('Kütüphaneye giriş yapamazsınız.');
+}

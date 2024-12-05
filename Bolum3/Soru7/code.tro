@@ -1,0 +1,9 @@
+var
+  km, mil : Float;
+
+{
+  km = 5;
+  mil = 0.621371 * km;
+  
+  ShowMessage(mil);
+}

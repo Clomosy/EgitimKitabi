@@ -1,0 +1,24 @@
+var
+  Sayi : Integer;
+  Faktoriyel : Integer;
+  I : Integer;
+
+{
+  Sayi = 12;
+  
+  if (Sayi < 1)
+  {
+    ShowMessage('Lütfen pozitif bir sayı belirleyiniz...');
+    Exit;
+  }
+  
+  Faktoriyel = 1;
+  
+  for(I = 1 to Sayi)
+  {
+    Faktoriyel = Faktoriyel * I;
+  }
+  
+  ShowMessage('Faktoriyel: '+ IntToStr(Faktoriyel));
+} 
+

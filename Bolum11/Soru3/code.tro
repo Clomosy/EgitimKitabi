@@ -1,0 +1,14 @@
+var
+  MyForm : TCLForm;
+  MyLabel : TCLLabel;
+
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyLabel = MyForm.AddNewLabel(MyForm,'MyLabel','Merhaba Dünya!');
+  MyLabel.Align = alCenter;
+  MyLabel.Height = 50;
+  MyLabel.Width = 200;
+  
+  MyForm.Run;
+}

@@ -1,0 +1,12 @@
+var
+  Deger1, Deger2 : Boolean;
+
+{
+  Deger1 = False;
+  Deger2 = True;
+  
+  if (Deger1 && Deger2)
+    ShowMessage('İki değer de doğrudur.')
+  else 
+    ShowMessage('Her iki değerden biri yanlıştır.');
+}

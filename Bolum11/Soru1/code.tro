@@ -1,0 +1,15 @@
+var
+  MyForm : TCLForm;
+  MyBtn : TCLButton;
+  
+void mesajVer;
+{
+  ShowMessage('Bu bir mesaj kutusudur!');
+}
+{
+  MyForm = TCLForm.Create(Self);
+  
+  MyBtn = MyForm.AddNewButton(MyForm,'MyBtn', 'Mesaj Göster');
+  MyForm.AddNewEvent(MyBtn,tbeOnClick,'mesajVer');
+  MyForm.Run;
+}

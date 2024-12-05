@@ -1,0 +1,36 @@
+var
+  MyForm : TCLForm;
+  MyEdit : TCLEdit;
+  MyLabel : TCLLabel;
+  MyButton : TCLButton;
+  MyPanel : TclPanel;
+  
+void labelaYaz;
+{
+  MyLabel.Text = MyEdit.Text;
+}
+
+{
+  MyForm = TCLForm.Create(Self);
+  MyPanel = MyForm.AddNewPanel(MyForm,'MyPanel');
+  MyPanel.Align = alCenter
+  MyPanel.Width = MyForm.clWidth / 2;
+  MyPanel.Height = MyForm.clHeight / 3;
+
+  MyEdit = MyForm.AddNewEdit(MyPanel,'MyEdit', 'Metin Giriniz...');
+  MyEdit.Align = alMostTop;
+  MyEdit.Height = MyPanel.Height / 4;
+  
+  MyButton = MyForm.AddNewButton(MyPanel,'MyButton', 'Label''a Yaz');
+  MyButton.Align = alCenter;
+  MyButton.Width = MyPanel.Width /2;
+  MyButton.Height = MyPanel.Height / 4;
+  MyButton.Margins.Left = MyPanel.Width / 2;
+  MyForm.AddNewEvent(MyButton,tbeOnClick,'labelaYaz');
+  
+  MyLabel = MyForm.AddNewLabel(MyPanel,'MyLabel','');
+  MyLabel.Align = alBottom;
+  MyLabel.Height = MyPanel.Height / 4;
+  
+  MyForm.Run;
+}

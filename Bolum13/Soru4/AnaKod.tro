@@ -1,0 +1,142 @@
+var
+  MyForm : TCLForm;
+  Sayi1Edit, Sayi2Edit : TCLEdit;
+  OperatorLabel, SonucLabel : TCLLabel;
+  ArtiButton, EksiButton, CarpButton, BolmeButton :  TCLImage;
+  AnaPanel, sayiPanel,IslemPanel, IslemPanel1,IslemPanel2, HesaplaPanel, SonucPanel : TCLPanel;
+  HesaplaButton : TCLButton;
+  Unit1 : TCLUnit;
+  
+void HesaplaButtonTikla;
+{
+  if((Sayi1Edit.Text == '') || (Sayi2Edit.Text == ''))
+  {
+    ShowMessage('Sayi değerlerini boş bırakmayınız.');
+  }
+  else
+  {
+    if (OperatorLabel.Text == '?')
+      ShowMessage('Bir işlem seçiniz.');
+    else
+    {
+      Unit1.UnitName = 'uHesaplama';
+      Unit1.CallerForm = MyForm;
+      Unit1.Run;
+      MyForm.clHide;   
+    }
+
+  }
+}
+
+void IslemButtonTikla; 
+var
+  clickedBtn:TClProButton;
+{
+  clickedBtn = TClProButton(MyForm.Clsender); 
+  OperatorLabel.Text = clickedBtn.Hint;
+
+}
+ 
+{
+  MyForm = TCLForm.Create(Self);
+  Unit1 = TCLUnit.Create;
+  AnaPanel = MyForm.AddNewPanel(MyForm,'AnaPanel');
+  AnaPanel.Align = AlClient;
+  AnaPanel.Margins.Top = 30;
+  AnaPanel.Margins.Bottom = 30;
+  AnaPanel.Margins.Left = 30;
+  AnaPanel.Margins.Right = 30;
+  
+  sayiPanel = MyForm.AddNewPanel(AnaPanel,'sayiPanel');
+  sayiPanel.Align = AlMostTop;
+  sayiPanel.Height = AnaPanel.Height / 6;
+  sayiPanel.Margins.Top = 5;
+  
+  Sayi1Edit = MyForm.AddNewEdit(sayiPanel,'Sayi1Edit', 'Sayı 1... ');
+  Sayi1Edit.Align = AlLeft;
+  Sayi1Edit.Width = sayiPanel.Width/2 - 70;
+  Sayi1Edit.clTypeOfField = taFloat;
+  
+  OperatorLabel = MyForm.AddNewLabel(sayiPanel,'OperatorLabel','?');
+  OperatorLabel.Align = alClient;
+  OperatorLabel.StyledSettings = ssFamily;
+  OperatorLabel.TextSettings.Font.Size = 18;
+  OperatorLabel.TextSettings.HorzAlign = taCenter;
+  
+  Sayi2Edit = MyForm.AddNewEdit(sayiPanel,'Sayi2Edit', 'Sayı 2... ');
+  Sayi2Edit.Align = alRight;
+  Sayi2Edit.Width = sayiPanel.Width/2 - 70;
+  Sayi2Edit.clTypeOfField = taFloat;
+  
+  //Operatörler için oluşturulan panel yapısı
+  IslemPanel = MyForm.AddNewPanel(AnaPanel,'IslemPanel');
+  IslemPanel.Align = AlMostTop;
+  IslemPanel.Height = AnaPanel.Height / 3;
+  IslemPanel.Margins.Top = 30;
+  
+  IslemPanel1 = MyForm.AddNewPanel(IslemPanel,'IslemPanel1');
+  IslemPanel1.Align = AlMostTop;
+  IslemPanel1.Height = IslemPanel.Height / 2 - 20;
+  IslemPanel1.Margins.Top = 5;
+  IslemPanel1.Margins.Bottom = 5;
+  
+  ArtiButton = MyForm.AddNewButton(IslemPanel1,'ArtiButton', '+');
+  ArtiButton.Align = alLeft;
+  ArtiButton.Margins.Left = IslemPanel1.Width / 4;
+  ArtiButton.Width = IslemPanel1.Width / 6;
+  ArtiButton.Hint = '+';
+  MyForm.AddNewEvent(ArtiButton,tbeOnClick,'IslemButtonTikla');
+  
+  EksiButton = MyForm.AddNewButton(IslemPanel1,'EksiButton', '-');
+  EksiButton.Align = alRight;
+  EksiButton.Margins.Right = IslemPanel1.Width / 4;
+  EksiButton.Width = IslemPanel1.Width / 6;
+  EksiButton.Hint = '-';
+  MyForm.AddNewEvent(EksiButton,tbeOnClick,'IslemButtonTikla');
+  
+  IslemPanel2 = MyForm.AddNewPanel(IslemPanel,'IslemPanel2');
+  IslemPanel2.Align = AlTop;
+  IslemPanel2.Height = IslemPanel.Height / 2 - 20;
+  IslemPanel2.Margins.Top = 5;
+  IslemPanel2.Margins.Bottom = 5;
+  
+  CarpButton = MyForm.AddNewButton(IslemPanel2,'CarpButton', '*');
+  CarpButton.Align = alLeft;
+  CarpButton.Margins.Left = IslemPanel2.Width / 4;
+  CarpButton.Width = IslemPanel2.Width / 6;
+  CarpButton.Hint = '*';
+  MyForm.AddNewEvent(CarpButton,tbeOnClick,'IslemButtonTikla');
+  
+  BolmeButton = MyForm.AddNewButton(IslemPanel2,'BolmeButton', '/');
+  BolmeButton.Align = alRight;
+  BolmeButton.Margins.Right = IslemPanel2.Width / 4;
+  BolmeButton.Width = IslemPanel2.Width / 6;
+  BolmeButton.Hint = '/';
+  MyForm.AddNewEvent(BolmeButton,tbeOnClick,'IslemButtonTikla');
+  
+  //Hesaplama butonu için oluşturulan panel yapısı
+  HesaplaPanel = MyForm.AddNewPanel(AnaPanel, 'HesaplaPanel');
+  HesaplaPanel.Align = AlBottom;
+  HesaplaPanel.Height = AnaPanel.Height / 6;
+  HesaplaPanel.Margins.Bottom = 30;
+  
+  HesaplaButton = MyForm.AddNewButton(HesaplaPanel,'HesaplaButton', 'Hesapla');
+  HesaplaButton.Align = alCenter;
+  HesaplaButton.Height = HesaplaPanel.Height / 2;
+  HesaplaButton.Width = 100;
+  MyForm.AddNewEvent(HesaplaButton,tbeOnClick,'HesaplaButtonTikla');
+  
+  //uIslem ekranından gelen sonuç:
+  SonucPanel =  MyForm.AddNewPanel(AnaPanel, 'SonucPanel');
+  SonucPanel.Align = AlMostBottom;
+  SonucPanel.Height = AnaPanel.Height / 6;
+  SonucPanel.Margins.Bottom = 5;
+  
+  SonucLabel = MyForm.AddNewLabel(SonucPanel, 'SonucLabel','Sonuç: ');
+  SonucLabel.Align = alLeft;
+  SonucLabel.Width=SonucPanel.width;
+  SonucLabel.StyledSettings = ssFamily;
+  SonucLabel.TextSettings.Font.Size = 24;
+  
+  MyForm.Run;
+}

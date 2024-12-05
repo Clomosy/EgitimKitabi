@@ -1,0 +1,6 @@
+var
+  sehirAdi : String;
+{
+  sehirAdi = 'Aydın';
+  ShowMessage(sehirAdi);
+}
