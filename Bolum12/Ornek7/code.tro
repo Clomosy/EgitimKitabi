@@ -1,0 +1,26 @@
+var
+  Form1:TclForm;
+  KonumLbl:TclLabel;
+  HareketImg:TClImage;
+
+void MouseHareket;
+{
+  KonumLbl.Text = IntToStr(Form1.clSenderMousePosX) + ','+IntToStr(Form1.clSenderMousePosY);
+}
+
+{
+  Form1 = TClForm.Create(Self);
+  
+  KonumLbl = Form1.AddNewLabel(Form1, 'KonumLbl','--');
+  KonumLbl.Align = alTop;
+  KonumLbl.Height = 20;
+  
+  HareketImg = Form1.AddNewImage(Form1, 'HareketImg');
+  Form1.setImage(HareketImg,'https://clomosy.com/demos/bg.png');
+  HareketImg.Align = alCenter;
+  HareketImg.Height = 260;
+  HareketImg.Width = 145;
+  Form1.AddNewEvent(HareketImg, tbeOnMouseMove,'MouseHareket');
+  
+  Form1.Run;
+}

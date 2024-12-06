@@ -1,0 +1,30 @@
+var 
+  Form1:TclForm;
+  SonDurum:TCLLabel;
+  
+void MouseBas;
+{
+  Form1.SetFormColor('ffffff','#00b282',clGCross); 
+  SonDurum.Caption = ' Tuşa bastın'; 
+}
+
+void MouseBirak;
+{
+  Form1.SetFormColor('#00b282','ffffff',clGCross);
+  SonDurum.Caption = ' Tuşu serbest bıraktın';
+}
+ 
+{
+  Form1=TclForm.Create(Self);
+  
+  SonDurum = Form1.AddNewLabel(Form1,'SonDurum','Henüz Tıklamadın');
+  SonDurum.Align = alContents;
+  SonDurum.StyledSettings = ssFamily;
+  SonDurum.TextSettings.Font.Size=20;
+  SonDurum.margins.left=10;
+  
+  Form1.AddNewEvent(Form1,tbeOnmouseUp,'MouseBirak');
+  Form1.AddNewEvent(Form1,tbeOnmouseDown,'MouseBas');
+  
+  Form1.Run;
+}

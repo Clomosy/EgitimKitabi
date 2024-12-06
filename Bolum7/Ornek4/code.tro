@@ -1,0 +1,17 @@
+var  
+  Matris : Variant ;  
+  i, j,satirSayisi,sutunSayisi: Integer;
+{
+  Matris = VarArrayCreate([0,3,0,2],12); 
+  Matris = [[1, 2, 3], [5, 6, 7], [9, 10, 11], [13, 14, 15]];
+  
+  sutunSayisi = Length(Matris[0]); //4 satır
+  satirSayisi = Length(Matris); //3 sütun
+  ShowMessage(Matris[3,0]);
+  for (i = 0 to satirSayisi-1)  
+  {    
+    for (j = 0 to sutunSayisi-1)      
+      ShowMessage(IntToStr(Matris[i, j]));
+    ShowMessage(' ');
+  }
+}

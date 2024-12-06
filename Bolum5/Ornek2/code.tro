@@ -1,0 +1,14 @@
+var
+  Derece:Integer;
+{
+  Derece=2;
+
+  case (Derece) of 
+  { 
+    1: ShowMessage('1.oldu');
+    2: ShowMessage('2.oldu');
+    3: ShowMessage('3.oldu');
+  else 
+    ShowMessage('Dereceye giremedi');
+  }
+}

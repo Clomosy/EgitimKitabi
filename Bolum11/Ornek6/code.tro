@@ -1,0 +1,10 @@
+Var 
+  Form1:TclForm;
+  Panel1 : TclPanel;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(self);
+  Panel1 = Form1.AddNewPanel(Form1,'Panel1');
+  Buton1 = Form1.AddNewButton(Panel1,'Buton1','buton');
+  Form1.Run;
+}

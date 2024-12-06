@@ -1,0 +1,23 @@
+var
+  y : Double;
+  x,z : Integer;
+{
+  // Bir sayının bir azaltılması
+  z = 5;
+  Dec(z);
+  ShowMessage('5-1 = '+ IntToStr(z)); //4
+
+  // Karekök alma
+  x = 25.0;
+  y = Sqrt(x);
+  ShowMessage('25''in karekökü: '+ IntToStr(y)); //5
+
+  // Mutlak değer alma
+  x = -10;
+  y = Abs(x);
+  ShowMessage('-10''un mutlak değeri: '+ IntToStr(y)); //10
+
+  // Rastgele sayı üretme
+  x = Random()*20; 
+  ShowMessage('Rastgele sayı: '+ IntToStr(x));
+}

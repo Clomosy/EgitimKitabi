@@ -1,0 +1,10 @@
+var
+  Form1 : TclForm;
+  Edit1 : TclEdit;
+{
+  Form1 = TclForm.Create(Self);
+  
+  Edit1 = Form1.AddNewEdit(Form1,'Edit1','Metni giriniz...');
+  Edit1.setFocus;
+  Form1.Run;
+}

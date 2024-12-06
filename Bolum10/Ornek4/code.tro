@@ -1,0 +1,6 @@
+var 
+  UygulamaYolu : String;
+{
+  UygulamaYolu = Clomosy.AppBasePath;
+  ShowMessage('Uygulamanın ana dizin yolu: '+UygulamaYolu);
+}

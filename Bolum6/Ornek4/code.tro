@@ -1,0 +1,12 @@
+var
+  Satir,Sutun:Integer;
+{
+  for Satir = 1 to 5 //dış döngü
+  {
+    for Sutun = 1 to 5 //iç döngü
+    {
+      // Satir ve Sutun'ye bağlı işlemler
+      Console.Text(IntToStr(Satir)+'-'+IntToStr(Sutun));
+    }
+  }
+}

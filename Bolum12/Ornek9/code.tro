@@ -1,0 +1,31 @@
+var
+ Form1:TclForm;
+ ComboBox1 : TClComboBox;
+
+void ComboSecilenDeger;
+{
+  ShowMessage('Seçilen gün : '+ ComboBox1.Items[ComboBox1.ItemIndex]);
+}
+
+{
+ Form1 = TclForm.Create(Self);
+ ComboBox1 = Form1.AddNewComboBox(Form1,'ComboBox1');
+ With ComboBox1 do
+ {
+    Align = alTop;
+    Width = 150;
+    Margins.Top = 10;
+    Margins.Left = 50;
+    Margins.Right = 50;
+    AddItem('Pazartesi','01');
+    AddItem('Salı','02');
+    AddItem('Çarşamba','03');
+    AddItem('Perşembe','04');
+    AddItem('Cuma','05');
+    AddItem('Cumartesi','06');
+    AddItem('Pazar','07');
+ }
+
+ Form1.AddNewEvent(ComboBox1,tbeOnChange,'ComboSecilenDeger');
+ Form1.Run;
+}

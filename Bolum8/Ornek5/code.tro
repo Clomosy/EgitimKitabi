@@ -1,0 +1,21 @@
+var
+  GelenDeger : Integer;
+// Fonksiyon tanımı 
+Function FaktoriyelHesapla(Sayi: Integer): Integer; 
+var 
+  i, Faktoriyel: Integer; 
+{ 
+  Faktoriyel = 1; 
+  // Faktöriyel hesaplama 
+  for (i = 1 to Sayi) 
+  Faktoriyel = Faktoriyel * i; 
+  
+  // Sonucu döndür 
+  Result = Faktoriyel;
+} 
+
+{ 
+  // Faktöriyel hesaplama prosedürünü çağır 
+  GelenDeger = FaktoriyelHesapla(5);
+  ShowMessage(GelenDeger);
+}

@@ -1,0 +1,15 @@
+var
+  arkadasGeliyor, icecekVar, filmIzleyebilir: Boolean;
+{
+  arkadasGeliyor = False; // Arkadaş gelmiyor
+  icecekVar = True;  // içecek var
+
+  filmIzleyebilir = (arkadasGeliyor || icecekVar);
+
+  if filmIzleyebilir
+    ShowMessage('Film izleyebilirsiniz.');
+  else
+    ShowMessage('Film izleyemezsiniz.');
+}
+
+

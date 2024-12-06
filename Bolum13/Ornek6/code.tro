@@ -1,0 +1,19 @@
+var
+  Form2:TCLForm;
+  LblMutfak : TclLabel;
+  Button2 : TclButton;
+
+void uSalonaGit;
+{
+  Clomosy.RunUnit('uSalon');
+}
+{
+  Form2 = TCLForm.Create(Self);
+  LblMutfak = Form2.AddNewLabel(Form2,'LblMutfak', 'uMutfak Birimindesin!');
+  LblMutfak.Align = alTop;
+  Button2 = Form2.AddNewButton(Form2,'Button2', 'uSalon''a git!');
+  Button2.Width = 150;
+  Form2.AddNewEvent(Button2,tbeOnClick,'uSalonaGit');
+  
+  Form2.Run;
+}

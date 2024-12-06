@@ -1,0 +1,20 @@
+var
+  Form1:TclForm;
+  VertScrollBox : TClVertScrollBox;
+  Img1 : TClImage;
+  i : Integer;
+{
+  Form1 = TclForm.Create(Self);
+  Form1.AddAssetFromUrl('https://clomosy.com/demos/balloon.png');
+  VertScrollBox = Form1.AddNewVertScrollBox(Form1,'VertScrollBox');
+  VertScrollBox.Align = alMostTop;
+  VertScrollBox.Height = 100;
+  
+  for (i = 1 to 20)
+  {
+    Img1 = Form1.AddNewImage(VertScrollBox,'Img1'+IntToStr(i));
+    Img1.Align = alTop;
+    Form1.SetImage(Img1,'balloon.png');
+  }
+  Form1.Run;
+}

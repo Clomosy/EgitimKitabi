@@ -1,0 +1,8 @@
+var 
+  AnaForm:TclForm;
+{
+  AnaForm=TclForm.Create(Self);
+  ShowMessage(AnaForm.clHeight); 
+  ShowMessage(AnaForm.clWidth); 
+  AnaForm.Run;
+}

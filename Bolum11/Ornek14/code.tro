@@ -1,0 +1,19 @@
+Var 
+  Form1:TclForm;
+  Panel1 : TcLPanel;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(self);
+
+  Panel1 = Form1.AddNewPanel(Form1,'Panel1');
+  Panel1.Align = alClient;
+  Panel1.Padding.Left = 30;
+  Panel1.Padding.Right = 30;
+  Panel1.Padding.Top = 30;
+  Panel1.Padding.Bottom = 30;
+
+  Buton1 = Form1.AddNewButton(panel1,'Buton1','BUTON');
+  Buton1.Align = alClient;
+
+  Form1.Run;
+}

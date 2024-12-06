@@ -1,0 +1,9 @@
+Var 
+  Form1:TclForm;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(self);
+  Buton1 = Form1.AddNewButton(Form1,'Buton1','BUTON');
+  Buton1.Width = 200;
+  Form1.Run;
+}

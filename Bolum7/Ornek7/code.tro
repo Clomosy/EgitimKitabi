@@ -1,0 +1,21 @@
+var 
+  Dizi : TClArrayInteger;
+  i: Integer;
+{
+  Dizi = TClArrayInteger.Create;
+  Dizi.Add(20); 
+  Dizi.Add(30);
+  Dizi.Add(17);
+  Dizi.Add(23);
+  for (i = 0 to Dizi.Count-1)
+  {
+    ShowMessage('Değer: '+IntToStr(Dizi.GetItem(i)));
+  }
+  Dizi.RemoveAt(0);
+  
+  ShowMessage('Silme işleminden sonraki yeni hali');
+  for (i = 0 to Dizi.Count-1)
+  {
+    ShowMessage('Değer: '+IntToStr(Dizi.GetItem(i)));
+  }
+ }

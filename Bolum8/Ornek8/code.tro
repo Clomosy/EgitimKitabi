@@ -1,0 +1,37 @@
+var
+  sayi: Integer;
+  sonuc: Double;
+{
+  sayi = 15;
+
+  // 1. Tek sayı kontrolü (Odd)
+  if (Odd(sayi))
+    ShowMessage('Sayı tektir: ' + IntToStr(sayi)) // Çıktı: 'Sayı tektir: 15'
+  else
+    ShowMessage('Sayı çifttir: ' + IntToStr(sayi));
+
+  // 2. Sayıyı bir artır (Inc)
+  Inc(sayi);
+  ShowMessage('Sayı bir artırıldı: ' + IntToStr(sayi)); // 16
+
+  // 3. Yuvarlama (Round)
+  sonuc = 15.75;
+  sonuc = Round(sonuc);
+  ShowMessage('15.75 yuvarlandı: ' + FloatToStr(sonuc)); // 16
+
+  // 4. Bölüm sonucu (Div)
+  sonuc = 16 div 3; // Tam sayı bölme
+  ShowMessage('16 div 3 sonucu: ' + FloatToStr(sonuc)); // 5
+
+  // 5. Mod işlemi (kalan bulma)
+  sonuc = 16 mod 3; // Kalan
+  ShowMessage('16 mod 3 sonucu: ' + FloatToStr(sonuc)); // 1
+
+  // 6. Ondalıklı kısmı al (Frac)
+  sonuc = Frac(15.75);
+  ShowMessage('15.75 ondalık kısmı: ' + FloatToStr(sonuc)); // 0,75
+
+  // 7. Tam kısmı al (Trunc)
+  sonuc = Trunc(15.75);
+  ShowMessage('15.75 tam kısmı: ' + FloatToStr(sonuc)); // 15
+}

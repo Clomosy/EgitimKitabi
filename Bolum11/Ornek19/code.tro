@@ -1,0 +1,12 @@
+var
+  Form1 : TclForm;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(Self); 
+  Buton1 = Form1.AddNewButton(Form1,'Buton1','Buton');
+  Buton1.StyledSettings = ssFamily;
+  Buton1.TextSettings.FontColor = clAlphaColor.clHexToColor('#ff0000');
+  Buton1.TextSettings.Font.Size = 16;
+  Buton1.TextSettings.Font.Style = [fsItalic,fsBold];     
+  Form1.Run;
+}

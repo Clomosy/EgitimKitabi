@@ -1,0 +1,12 @@
+Var
+  Sayi, Sayi2,Toplam : Integer;
+{
+  Sayi = 20;
+  Sayi2 = 18;
+  try
+    Toplam = Sayi + Sayi2;
+  finally
+    ShowMessage('Toplama işlemi gerçekleştirildi.');
+    ShowMessage(IntToStr(Sayi)+' + '+IntToStr(Sayi2)+' = '+IntToStr(Toplam));
+  }
+}

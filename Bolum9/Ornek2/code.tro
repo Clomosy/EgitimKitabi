@@ -1,0 +1,10 @@
+Var
+  Deger : String;
+{
+  Deger = '15b16';
+  try
+    ShowMessage(StrToInt(Deger));
+  except
+    ShowMessage('Tip dönüşümü için geçerli bir tam sayı değeri yazılmalıdır!');
+  }
+}

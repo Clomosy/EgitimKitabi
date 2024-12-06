@@ -1,0 +1,14 @@
+var
+  i: Integer;
+{
+  for (i = 1 to 10)
+  {
+    ShowMessage('Değer : '+ IntToStr(i));
+    if (i == 5)
+    {
+      ShowMessage('i değeri 5 olduğu için döngüden çıkıyorum.');
+      Exit;
+    }
+  }
+  ShowMessage('Döngü sonlandı.');
+}

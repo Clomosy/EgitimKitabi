@@ -1,0 +1,13 @@
+Var
+  a, b : Integer ;	
+{
+  a = 18 ;
+  b = 7 ;
+  ShowMessage (a == b); //False
+  ShowMessage (a <> b); //True
+  ShowMessage (not(a == b)); //True
+  ShowMessage (a < b); //False
+  ShowMessage (a > b); //True
+  ShowMessage (a <= b); //False
+  ShowMessage (a >= b); //True
+}

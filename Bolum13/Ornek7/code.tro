@@ -1,0 +1,16 @@
+var
+  Form1 : TCLForm;
+  BtnAnaKod : TclButton;
+  LblAnaKod : TclLabel;
+{
+  Form1 = TCLForm.Create(Self);
+  Form1.clSetCaption('Ana Kod');
+  LblAnaKod = Form1.AddNewLabel(Form1,'LblAnaKod', 'Ana Kod');
+  LblAnaKod.Align = alTop;
+  LblAnaKod.Height = 70;
+  LblAnaKod.StyledSettings = ssFamily;
+  LblAnaKod.TextSettings.Font.Size = 20;
+  BtnAnaKod = Form1.AddNewButton(Form1,'BtnAnaKod', 'Birim''e git!');
+  BtnAnaKod.Width = 100;
+  Form1.Run;
+}

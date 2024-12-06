@@ -1,0 +1,10 @@
+var
+  Form3:TCLForm;
+  LblSalon : TclLabel;
+
+{
+  Form3 = TCLForm.Create(Self);
+  LblSalon = Form3.AddNewLabel(Form3,'LblSalon', 'uSalon Birimindesin!');
+  LblSalon.Width = 200;
+  Form3.Run;
+}

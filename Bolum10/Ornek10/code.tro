@@ -1,0 +1,7 @@
+var 
+  AnaForm:TclForm;
+{
+  AnaForm=TclForm.Create(Self);
+  AnaForm.clSetCaption('Yeni Başlık');
+  AnaForm.Run;
+}

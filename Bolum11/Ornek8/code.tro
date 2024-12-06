@@ -1,0 +1,20 @@
+var
+  Form1:TclForm;
+  HorzScrollBox : TClHorzScrollBox;
+  Img1 : TClImage;
+  i : Integer;
+{
+  Form1 = TclForm.Create(Self);
+  Form1.AddAssetFromUrl('https://clomosy.com/demos/balloon.png');
+  HorzScrollBox = Form1.AddNewHorzScrollBox(Form1,'HorzScrollBox');
+  HorzScrollBox.Align = alMostTop;
+  HorzScrollBox.Height = 100;
+  
+  for (i = 1 to 20)
+  {
+    Img1 = Form1.AddNewImage(HorzScrollBox,'Img1'+IntToStr(i));
+    Img1.Align = alLeft;
+    Form1.SetImage(Img1,'balloon.png');
+  }
+  Form1.Run;
+}

@@ -1,0 +1,11 @@
+Var   
+  Form1 : TclForm;
+  Layout1 : TclLayout;
+  Edit1 : TclEdit;
+{
+  Form1=TclForm.Create(self);
+  Layout1 = Form1.AddNewLayout(Form1,'Layout1');
+  Edit1 = Form1.AddNewEdit(Layout1,'Edit1','Metin giriniz...');
+  Edit1.Width = 150;
+  Form1.Run;
+}

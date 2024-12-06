@@ -1,0 +1,10 @@
+var
+  Sayi: Integer;
+{
+  Sayi = 0;
+  repeat
+    Sayi = Sayi + 4;
+    ShowMessage('Sayı: ' + IntToStr(Sayi));
+  until (Sayi > 10);
+  ShowMessage('Sayı 10 dan büyük olduğu için döngüden çıkıldı.');
+}

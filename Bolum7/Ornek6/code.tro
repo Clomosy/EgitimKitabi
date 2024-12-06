@@ -1,0 +1,23 @@
+var 
+  Dizi : TClArrayInteger;
+  i: Integer;
+{
+  Dizi = TClArrayInteger.Create;
+  Dizi.Add(20); 
+  Dizi.Add(30);
+  Dizi.Add(17);
+  Dizi.Add(23);
+  ShowMessage(Dizi.Count);
+  for (i = 0 to Dizi.Count-1)
+  {
+    ShowMessage('Değer: '+IntToStr(Dizi.GetItem(i)));
+  }
+  
+  Dizi.SetItem(2,88);
+  
+  ShowMessage('Dizinin yeni hali');
+  for (i = 0 to Dizi.Count-1)
+  {
+    ShowMessage ('Değer: '+IntToStr(Dizi.GetItem(i)));
+  }
+}

@@ -1,0 +1,13 @@
+var
+  HavaGuzel, islerBitti, disariCikabilir: Boolean;
+{
+  HavaGuzel = True;  // Hava güzel
+  islerBitti = False; // İşler bitmemiş
+
+  disariCikabilir = (HavaGuzel && islerBitti);
+
+  if disariCikabilir
+    ShowMessage('Dışarı çıkabilirsiniz.');
+  else
+    ShowMessage('Dışarı çıkamazsınız.');
+}

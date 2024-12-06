@@ -1,0 +1,33 @@
+var
+  Dizi: array[3] of Integer;
+  i, j, Min, Tut: Integer;
+{
+  //Diziyi tanımla 
+  Dizi[0] = 42;
+  Dizi[1] = 34;
+  Dizi[2] = 81;
+  Dizi[3] = 10; 
+  Console.Text('Sıralanmadan önce: '); //Sıralanmadan önce diziyi yazdır
+  for (i = 0 to Length(Dizi)-1)
+    Console.Text(IntToStr(Dizi[i]));
+//Seçim sıralama algoritması 
+  for (i = 0 to Length(Dizi)-1) 
+  {
+    Min = i;
+    for (j = i + 1 to Length(Dizi)-1)
+    {
+     if (Dizi[j] < Dizi[Min])
+     {
+        Min = j;
+        //En küçük elemanı, sıralanmamış bölümün ilk elemanıyla yer değiştir 
+        Tut = Dizi[i];
+        Dizi[i] = Dizi[Min];
+        Dizi[Min] = Tut; 
+     }
+    }
+  }
+  //Sıralandıktan sonra diziyi yazdır 
+  Console.Text('Sıralandıktan sonra: ');
+  for (i = 0 to Length(Dizi)-1)
+    Console.Text(IntToStr(Dizi[i]));
+}

@@ -1,0 +1,6 @@
+var 
+  UygulamaDosyaYolu : String;
+{
+  UygulamaDosyaYolu = Clomosy.AppFilesPath; 
+  ShowMessage('Uygulamanın dosya yolu: '+ UygulamaDosyaYolu);
+}

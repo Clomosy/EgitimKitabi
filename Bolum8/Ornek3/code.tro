@@ -1,0 +1,20 @@
+// Prosedürün tanımlanması
+void FaktoriyelHesapla; 
+var 
+  i, Sayi, Faktoriyel: Integer; 
+{ 
+  Faktoriyel = 1; 
+  Sayi = 5;
+  
+  // Faktöriyel hesaplama 
+  for (i = 1 to Sayi) 
+  Faktoriyel = Faktoriyel * i; 
+  
+  // Sonucu ekrana yazdır 
+  ShowMessage(IntToStr(Sayi) + ' sayısının faktöriyeli: '+ IntToStr(Faktoriyel)); 
+} 
+
+{ 
+  // Faktöriyel hesaplama prosedürünü çağır 
+  FaktoriyelHesapla();
+}

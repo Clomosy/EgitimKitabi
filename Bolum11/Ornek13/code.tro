@@ -1,0 +1,13 @@
+Var 
+  Form1:TclForm;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(self);
+  Buton1 = Form1.AddNewButton(Form1,'Buton1','BUTON');
+  Buton1.Align = alClient;
+  Buton1.Margins.Left = 30;
+  Buton1.Margins.Right = 30;
+  Buton1.Margins.Top = 30;
+  Buton1.Margins.Bottom = 30;
+  Form1.Run;
+}

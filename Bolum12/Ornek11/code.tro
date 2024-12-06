@@ -1,0 +1,35 @@
+var
+  Form1 : TclForm;
+  EditYaz: TclEdit;
+  ButonKapat : TclButton;
+  Layout1 : TclLayout;
+
+void KlavyeGoster;
+{
+  Layout1.Margins.Bottom = Form1.clVKBoundsHeight;
+}
+void KlavyeGizle;
+{
+  Layout1.Margins.Bottom = 20;
+}
+
+{
+  Form1 = TclForm.Create(Self);
+  Form1.AddNewEvent(Form1,tbeOnVirtualKeyboardShown,'KlavyeGoster');
+  Form1.AddNewEvent(Form1,tbeOnVirtualKeyboardHidden,'KlavyeGizle');
+
+  Layout1 = Form1.AddNewLayout(Form1,'Layout1');
+  Layout1.Align = alClient;
+  Layout1.Margins.Bottom = 20;
+
+  EditYaz = Form1.AddNewEdit(Layout1,'EditYaz','Bir şeyler yaz...');
+  EditYaz.Align = AlMostBottom;
+  EditYaz.Height = 50;
+
+  ButonKapat=Form1.AddNewButton(Layout1,'ButonKapat','Klavyeyi Kapat');
+  ButonKapat.Align = alBottom;
+  ButonKapat.Margins.Bottom = 10;
+  ButonKapat.Margins.Top = 10;
+  
+  Form1.Run;
+}

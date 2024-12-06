@@ -1,0 +1,14 @@
+var
+  Form1 : TclForm;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(Self);
+  Buton1 = Form1.AddNewButton(Form1,'Buton1','Başlat!');
+  With Buton1 do
+  {
+    Align = AlCenter;
+    Width = 150;
+    Height = 200;
+  }  
+  Form1.Run;
+}

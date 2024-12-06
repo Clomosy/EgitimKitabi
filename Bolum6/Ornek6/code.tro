@@ -1,0 +1,16 @@
+var
+  i: Integer;
+{
+  for (i = 1 to 4)
+  {
+    // i değeri 2 olduğunda bu iterasyonu atla, diğer iterasyona geç
+    if (i == 2)
+    {
+      ShowMessage('i değeri 2 olduğu için bu iterasyonu atlıyorum.');
+      Continue;
+      //Continue komutundan sonra gelen durumları atlar
+    }
+    // 2 değeri haricindeki diğer i değerlerini ekrana yazdırır
+    ShowMessage('Döngüdeyim, i = '+ IntToStr(i));
+  }
+}

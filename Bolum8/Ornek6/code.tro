@@ -1,0 +1,37 @@
+var
+  metin: String;
+{
+  metin = '  Merhaba Clomosy!  ';
+  
+  // 1. Küçük harfe çevir
+  metin = AnsiLowerCase(metin);
+  ShowMessage('Küçük harfe çevrildi: ' + metin); // Çıktı: '  merhaba clomosy!  '
+  
+  // 2. Büyük harfe çevir
+  metin = AnsiUpperCase(metin);
+  ShowMessage('Büyük harfe çevrildi: ' + metin); // Çıktı: '  MERHABA CLOMOSY!  '
+  
+  // 3. Baştaki ve sondaki boşlukları kaldır
+  metin = Trim(metin);
+  ShowMessage('Boşluklar kaldırıldı: ' + metin); // Çıktı: 'MERHABA CLOMOSY!'
+  
+  // 4. Belirli bir kısmı kopyala
+  metin = Copy(metin, 1, 7); // İlk 7 karakteri al
+  ShowMessage('İlk 7 karakter alındı: ' + metin); // Çıktı: 'MERHABA'
+  
+  // 5. Karakter sil
+  Delete(metin, 4, 2); // 4. karakterden başlayarak 2 karakter sil
+  ShowMessage('4. karakterden itibaren 2 karakter silindi: ' + metin); // Çıktı: 'MERBA'
+  
+  // 6. Metin ekle
+  Insert('HA', metin, 4); // 4. pozisyona 'HA' ekle
+  ShowMessage('4. pozisyona "HA" eklendi: ' + metin); // Çıktı: 'MERHABA'
+  
+  // 7. Metin karşılaştır (büyük-küçük harf duyarlı)
+  if (AnsiCompareStr(metin, 'MERHABA') == 0)
+    ShowMessage('Metin "MERHABA" ile birebir eşleşiyor (duyarlı).');
+  
+  // 8. Metin karşılaştır (büyük-küçük harf duyarsız)
+  if (AnsiCompareText(metin, 'merhaba') == 0)
+    ShowMessage('Metin "merhaba" ile birebir eşleşiyor (duyarsız).');
+}

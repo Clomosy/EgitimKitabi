@@ -1,0 +1,9 @@
+Var
+  Kutu1Boyut, Kutu2Boyut : Integer;
+  BoyutlarEsit : Boolean;
+{
+  Kutu1Boyut = 30;
+  Kutu2Boyut = 30;  
+  BoyutlarEsit = (Kutu1Boyut == Kutu2Boyut);
+  ShowMessage(BoyutlarEsit);
+}

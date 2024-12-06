@@ -1,0 +1,10 @@
+var
+  Form1 : TclForm;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(Self); 
+  Buton1 = Form1.AddNewButton(Form1,'Buton1','Buton');
+  Buton1.Text = 'Merhaba';
+  ShowMessage(Buton1.Text);
+  Form1.Run;
+}

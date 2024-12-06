@@ -1,0 +1,36 @@
+var 
+  Form1:TclForm;
+  ButtonGS,ButtonFB:TclButton;
+  Takim:String;
+void RenkVerFB;
+{
+  Form1.SetFormColor('#ffef03','#004684',clGCross);
+}
+void RenkVerGS;
+{
+  Form1.SetFormColor('#a90432','#fdb912',clGCross);
+}
+{
+  Form1 = TclForm.Create(Self);
+  
+  ButtonGS = Form1.AddNewButton(Form1, 'ButtonGS', 'Galatasaray');
+  With ButtonGS do
+  {
+    Align = alRight;
+    Margins.Right = 10;
+    Margins.Bottom = 10;
+    Width = 100;
+  }
+  Form1.AddNewEvent(ButtonGS,tbeOnEnter,'RenkVerGS');
+  
+  ButtonFB = Form1.AddNewButton(Form1,'ButtonFB','Fenerbahçe');
+  With ButtonFB do
+  {
+    Align = alLeft;
+    Margins.Left = 10;
+    Margins.Bottom = 10;
+    Width = 100;
+  }
+  Form1.AddNewEvent(ButtonFB,tbeOnEnter,'RenkVerFB');
+  Form1.Run;
+}

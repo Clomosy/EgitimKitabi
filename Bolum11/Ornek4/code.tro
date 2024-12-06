@@ -1,0 +1,10 @@
+var 
+  Form1 : TclForm;
+  Img1  : TclImage;
+{
+  Form1 = TclForm.Create(Self);
+  Form1.AddAssetFromURL('https://clomosy.com/learn/avatar.png');
+  Img1 = Form1.AddNewImage(Form1, 'Img1');
+  Form1.setImage(Img1,'avatar.png');
+  Form1.Run;
+}

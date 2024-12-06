@@ -1,0 +1,15 @@
+function TersCevir(GelenMetin: string): string;
+var
+  i: Integer;
+{
+  Result = '';
+  for (i = Length(GelenMetin) downto 1)
+    Result = Result + GelenMetin[i];
+}
+
+var
+  metin: string;
+{
+  metin = 'kitap';
+  ShowMessage('Cümlenin tersi: '+ TersCevir(metin));
+}

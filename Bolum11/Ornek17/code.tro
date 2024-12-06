@@ -1,0 +1,28 @@
+var
+  Form1 : TclForm;
+  Buton1 : TclButton;
+  Image1 : TclImage;
+  Edit1 : TclEdit;
+{
+  Form1 = TclForm.Create(Self);
+  
+  Buton1 = Form1.AddNewButton(Form1,'Buton1','Buton');
+  Buton1.Align = AlBottom; 
+  Buton1.Scale.X = 2;
+  Buton1.Scale.Y = 2; 
+  
+  Image1 = Form1.AddNewImage(Form1,'Image1');
+  Form1.setImage(Image1,' https://clomosy.com/demos/clomosyinfo.png');
+  Image1.Align = alClient;
+  //Image1.Visible = True //False yaparsak resim görünmez
+  Image1.Height = 400;
+  Image1.Width = 500;
+  
+  Edit1 = Form1.AddNewEdit(Form1,'Edit1','Yaz');
+  Edit1.Align = AlTop;
+  Edit1.Margins.Left = 100;
+  Edit1.Margins.Right = 100;
+  Edit1.Width = 100;
+  
+  Form1.Run;
+}

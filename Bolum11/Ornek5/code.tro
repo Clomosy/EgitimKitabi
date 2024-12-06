@@ -1,0 +1,8 @@
+Var 
+  Form1:TclForm;
+  Panel1 : TclPanel;
+{
+  Form1 = TclForm.Create(self);
+  Panel1 = Form1.AddNewPanel(Form1,'Panel1');
+  Form1.Run;
+}

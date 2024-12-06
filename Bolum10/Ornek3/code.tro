@@ -1,0 +1,7 @@
+var 
+  AnaForm:TclForm;
+{
+  AnaForm=TclForm.Create(Self);
+  AnaForm.SetFormBGImage('https://clomosy.com/demos/toprak.png');
+  AnaForm.Run;
+}

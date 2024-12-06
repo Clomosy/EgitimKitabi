@@ -1,0 +1,12 @@
+var
+  KalanPara:Integer;
+{
+  KalanPara = 200;
+  while (KalanPara > 0)
+  {
+    KalanPara = KalanPara - 50;
+    ShowMessage('Baba para ver');
+    ShowMessage('Al oğlum 50 lira cebimde '+IntToStr(KalanPara)+' '+' liram kaldı');
+  } 
+  ShowMessage('Para bitti');
+}

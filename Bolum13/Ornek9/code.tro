@@ -1,0 +1,26 @@
+var
+  Form1:TCLForm;
+  BtnAnaKod : TclButton;
+  LblAnaKod : TclLabel;
+  Unit1 :TclUnit;
+
+void BirimeGit;
+{
+  Unit1.UnitName = 'uMutfak';
+  Unit1.CallerForm = Form1;
+  Unit1.Run;
+}
+{
+  Form1 = TCLForm.Create(Self);
+  Form1.clSetCaption('Ana Kod');
+  Unit1 = TclUnit.Create;
+  LblAnaKod = Form1.AddNewLabel(Form1,'LblAnaKod', 'Ana Kod');
+  LblAnaKod.Align = alTop;
+  LblAnaKod.Height = 70;
+  LblAnaKod.StyledSettings = ssFamily;
+  LblAnaKod.TextSettings.Font.Size = 20;
+  BtnAnaKod = Form1.AddNewButton(Form1,'btnAnaKod', 'Birim''e git!');
+  BtnAnaKod.Width = 100;
+  Form1.AddNewEvent(btnAnaKod,tbeOnClick,'BirimeGit');
+  Form1.Run;
+}

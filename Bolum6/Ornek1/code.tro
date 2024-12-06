@@ -1,0 +1,11 @@
+var
+  Benzin:Integer;
+{
+  Benzin = 20;
+  while (Benzin > 0) 
+  { 
+    ShowMessage('Araba gider');
+    Benzin = Benzin - 7;
+  }
+  ShowMessage('Yakıt bitti araba gidemez');
+}

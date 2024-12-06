@@ -1,0 +1,20 @@
+Var
+  a, b, Toplama, Fark, Carpma, Bolme, Kalan, Bolum, UsAlma : Integer ;	
+{
+  a = 10 ;
+  b = 5 ;
+  Toplama = a+b ;
+  Fark = a-b ;
+  Carpma = a*b ;
+  Bolme = a/b ;
+  Kalan = a mod b ;
+  Bolum = a div b ;
+  UsALma = a ^ b ;
+  ShowMessage('Toplama sonucu : '+ IntToStr(Toplama)); //15
+  ShowMessage('Çıkarma sonucu : '+ IntToStr(Fark)); // 5
+  ShowMessage('Çarpma sonucu : '+ IntToStr(Carpma)); // 50
+  ShowMessage('Bölme sonucu : '+ IntToStr(Bolme)); // 2
+  ShowMessage('Bölme işleminde kalan sonucu : '+ IntToStr(Kalan)); //0
+  ShowMessage('Bölme işleminde bölüm sonucu : '+ IntToStr(Bolum)); //2
+  ShowMessage('Üs alma sonucu : '+ IntToStr(UsAlma)); //100000
+}

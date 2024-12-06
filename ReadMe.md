@@ -1,6 +1,5 @@
 # TRObject Eğitim Kitabı
-
-Bu kitapta yer alan Alıştırmalar bölümündeki örnek kod sorularının çözümlerini içermektedir. Her bölüm, kitabın içeriğine uygun olarak düzenlenmiş ve açıklamalı çözüm dosyalarıyla desteklenmiştir.
+Bu kitapta yer alan Alıştırmalar bölümündeki örnek kod sorularının ve bölümler içerisindeki örneklerin çözümlerini içermektedir. Her bölüm, kitabın içeriğine uygun olarak düzenlenmiş ve açıklamalı çözüm dosyalarıyla desteklenmiştir.
 
 ### Dizin Yapısı
 

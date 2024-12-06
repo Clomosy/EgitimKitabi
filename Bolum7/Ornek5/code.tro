@@ -1,0 +1,21 @@
+var  
+  Matris ;  
+  i, j: Integer; 
+  Tut : String;
+{
+  Tut = '';
+  Matris = VarArrayCreate([0,2,0,2],12);  
+  for (i = 0 to 2) 
+    for (j = 0 to 2)      
+      Matris[i, j] = (i + 1) * (j + 1);  
+    ShowMessage('Matrisin Elemanlari:');  
+  
+  for (i = 0 to 2)  
+  {    
+    for (j = 0 to 2)      
+      Tut = Tut +' '+IntToStr(Matris[i, j])
+    ShowMessage (Tut);
+    ShowMessage(' ');
+    Tut = '';
+  }
+}

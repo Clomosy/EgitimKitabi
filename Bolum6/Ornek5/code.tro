@@ -1,0 +1,15 @@
+var 
+  i : Integer;
+{ 
+  for(i = 1 to 10) 
+  { 
+    ShowMessage('Değer : '+ IntToStr(i));
+    // i değeri 3 olduğunda döngüden çık 
+    if(i == 3) 
+    { 
+      ShowMessage('i değeri 3 olduğu için döngüden çıkıyorum.'); 
+      Break; 
+    } 
+  } 
+  ShowMessage('Döngü sonlandı.'); 
+}

@@ -1,0 +1,24 @@
+var 
+  Form1:TclForm;
+  RenkBtn:TCLButton;
+  Hex:String;
+  
+void Renklen;
+var
+  Red, Green, Blue: Byte;
+{
+  Red = clMath.GenerateRandom(0,256);
+  Green = clMath.GenerateRandom(0,256);
+  Blue = clMath.GenerateRandom(0,256);
+
+  Hex = '#'+ IntToHex(Red,2) + IntToHex(Green,2) + IntToHex(Blue,2);
+  Form1.SetFormColor(Hex,'',clGNone); 
+}
+ 
+{
+  Form1=TclForm.Create(Self);
+  RenkBtn=Form1.AddNewButton(Form1,'RenkBtn', 'RENKLEN');
+  RenkBtn.Width = 150;
+  Form1.AddNewEvent(RenkBtn,tbeOnClick,'Renklen');
+  Form1.Run;
+}

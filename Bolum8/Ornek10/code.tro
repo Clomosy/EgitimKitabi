@@ -1,0 +1,20 @@
+var
+  Tarih : TclDateTime;
+  GunSayisi    : Integer;
+{
+  Tarih = EncodeDate(2023,02,27);
+  GunSayisi = DayOfWeek(tarih);
+  case GunSayisi of
+  {
+    1: ShowMessage('Bugün günlerden : Pazar');
+    2: ShowMessage('Bugün günlerden : Pazartesi');
+    3: ShowMessage('Bugün günlerden : Salı');
+    4: ShowMessage('Bugün günlerden : Çarşamba');
+    5: ShowMessage('Bugün günlerden : Perşembe');
+    6: ShowMessage('Bugün günlerden : Cuma');
+    7: ShowMessage('Bugün günlerden : Cumartesi');
+  }
+  
+  Tarih = Now();
+  ShowMessage('Tarih : '+DateTimeToStr(Tarih));
+}

@@ -1,0 +1,13 @@
+var 
+  Form1:TclForm;
+  MesajBtn:TCLButton;
+void Selamla;
+{
+  ShowMessage('Merhaba');
+}
+{
+  Form1=TclForm.Create(Self);
+  MesajBtn=Form1.AddNewButton(Form1,'MesajBtn', 'buton');
+  Form1.AddNewEvent(MesajBtn,tbeOnClick,'Selamla');
+  Form1.Run;
+}

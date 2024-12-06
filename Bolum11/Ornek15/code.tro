@@ -1,0 +1,11 @@
+Var 
+  Form1:TclForm;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(self);
+  Buton1 = Form1.AddNewButton(Form1,'Buton1','BUTON');
+  Buton1.Align = alNone;
+  Buton1.Position.X = 50;
+  Buton1.Position.Y = 100;
+  Form1.Run;
+}

@@ -1,0 +1,21 @@
+// Prosedürün tanımlanması
+void TekmiCiftmi; 
+var 
+  Sayi: Integer; 
+{ 
+  Sayi=7;
+  // Tek mi çift mi kontrolü 
+  if(Sayi mod 2 == 0)
+  {
+    ShowMessage(IntToStr(Sayi)+' çift sayıdır'); 
+  }
+  else
+  {
+    ShowMessage(IntToStr(Sayi)+' tek sayıdır'); 
+  }
+} 
+
+{ 
+  // TekmiCiftmi prosedürünü çağır 
+  TekmiCiftmi();
+}

@@ -1,0 +1,19 @@
+// Prosedürün tanımlanması
+void AlanHesapla; 
+var 
+  KisaKenar, UzunKenar, Alan : Integer; 
+{ 
+  KisaKenar = 5;
+  UzunKenar = 7;
+  
+  // Alan hesaplama 
+  Alan = KisaKenar * UzunKenar;
+  
+  // Sonucu ekrana yazdir 
+  ShowMessage(' dikdörtgenin alanı: '+ IntToStr(Alan)); 
+} 
+
+{ 
+  // Alan hesaplama prosedürünü çağır 
+  AlanHesapla();
+}

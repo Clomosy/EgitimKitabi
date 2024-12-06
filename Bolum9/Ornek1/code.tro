@@ -1,0 +1,12 @@
+Var
+  x,y,result : Integer;
+{
+  x = 0;
+  y = 15;
+  try
+    result = y div x;
+    ShowMessage(IntToStr(result));
+  except
+    ShowMessage('Hata!');
+  }
+}

@@ -1,0 +1,7 @@
+var 
+  AnaForm:TclForm;
+{
+  AnaForm=TclForm.Create(Self);
+  AnaForm.SetFormColor('#00b282','',clGNone); 
+  AnaForm.Run;
+}

@@ -1,0 +1,22 @@
+var
+  HavaGuzel, OdevBitmis: Boolean;
+{
+  HavaGuzel = True;  // Hava güzel
+  OdevBitmis = False; // Ödev bitmemiş
+
+  if HavaGuzel 
+  {
+    if OdevBitmis
+    {
+      ShowMessage('Parka gidebilirsin.');
+    }
+    else
+    {
+      ShowMessage('Önce ödevini yapmalısın.');
+    }
+  }
+  else
+  {
+    ShowMessage('Hava kötü, parka gidemezsin.');
+  }
+}

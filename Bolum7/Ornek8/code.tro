@@ -1,0 +1,38 @@
+var 
+  Dizi : TClArrayInteger;
+  i,j,Max,Tut, Tut_ind: Integer;
+
+{
+  Dizi = TClArrayInteger.Create;
+  Dizi.Add(20); 
+  Dizi.Add(30);
+  Dizi.Add(17);
+  Dizi.Add(23);
+  
+  //Sıralanmadan önce diziyi yazdır 
+  ShowMessage('Sıralanmadan önce: ');
+  for (i = 0 to Dizi.count-1)
+    ShowMessage(IntToStr(Dizi.GetItem(i)));
+
+  for (i = 0 to Dizi.count-2) 
+  {
+    Max=Dizi.GetItem(i);
+    for(j=i+1 to Dizi.count-1)
+    {
+      if(Dizi.GetItem(j)>Max)
+      {
+       Max=Dizi.GetItem(j);
+       Tut_ind=j;
+      }
+    }
+    Tut=Dizi.GetItem(i);
+    Dizi.SetItem(i,Max);
+    Dizi.SetItem(Tut_ind,Tut);
+    Max=0;
+  }
+
+  //Sıralandıktan sonra diziyi yazdır 
+  ShowMessage('Sıralandıktan sonra: ');
+  for (i = 0 to Dizi.count-1)
+    ShowMessage(IntToStr(Dizi.GetItem(i)));
+}

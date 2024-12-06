@@ -1,0 +1,8 @@
+var
+  Form1:TCLForm;
+  Buton1:TclButton;
+{
+  Form1 = TCLForm.Create(Self);
+  Buton1 = Form1.AddNewButton(Form1,'Buton1', 'Başlat');
+  Form1.Run;
+}

@@ -1,0 +1,23 @@
+var
+   MilliTakim: array[10] of String;
+   i:integer;
+   Tut:String;
+
+{
+  MilliTakim = ['Mert', 'Ferdi', 'Abdülkerim', 'Samet', 'Kaan', 'Mert', 'Kenan', 'Hakan', 'Salih', 'Arda', 'Barış'];
+
+  for(i=0 to Length(MilliTakim)-1)
+  {
+    ShowMessage(MilliTakim[i]);
+  }
+  
+  Tut = MilliTakim[9];  
+  MilliTakim[9] = MilliTakim[10];
+  MilliTakim[10] = tut;
+
+  ShowMessage('Yer değiştirildi.');  
+  for(i=0 to Length(MilliTakim)-1)
+  {
+    ShowMessage(MilliTakim[i]);
+  }
+}

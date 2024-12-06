@@ -1,0 +1,19 @@
+void DiziOrnek;
+var  
+  Dizi: array[0..4] of Integer;  
+  i,j: Integer;
+{  
+  for (i = 0 to 4) 
+  {   
+  Dizi[i] = Random() * 30;  
+  }
+  
+  // Diziyi ekrana yazdırma  
+  ShowMessage('Dizinin elemanlari:');  
+  for (i = 0 to Length(Dizi) - 1)    
+  ShowMessage('dizi[' + IntToStr(i) + '] = '+ IntToStr(Dizi[i]));
+}
+
+{
+  DiziOrnek;
+}

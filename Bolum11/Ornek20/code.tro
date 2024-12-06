@@ -1,0 +1,9 @@
+var
+  Form1 : TclForm;
+  Buton1 : TclButton;
+{
+  Form1 = TclForm.Create(Self); 
+  Buton1 = Form1.AddNewButton(Form1,'Buton1','Kaydet');
+  Buton1.Hint = 'Bu düğmeye tıklayarak kaydedin';  
+  Form1.Run;
+}

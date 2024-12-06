@@ -1,0 +1,9 @@
+var 
+  Form1 : TclForm;
+  Label1 : TclLabel;
+{
+  Form1 = TclForm.Create(Self);
+  Label1 = Form1.AddNewLabel(Form1,'Label1','KULLANICI BİLGİLERİ');
+  Label1.Width = 200;
+  Form1.Run;
+}

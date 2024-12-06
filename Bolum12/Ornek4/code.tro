@@ -1,0 +1,14 @@
+var 
+  Form1:TclForm;
+  
+void MesajYaz;
+{
+  ShowMessage('tbeOnMouseUp çalıştı');
+}
+ 
+{
+  Form1 = TclForm.Create(Self);
+  Form1.AddNewEvent(Form1,tbeOnMouseUp,'MesajYaz');
+  
+  Form1.Run;
+}

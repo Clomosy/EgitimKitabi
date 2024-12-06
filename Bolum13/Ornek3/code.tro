@@ -1,0 +1,14 @@
+var
+  Form1:TCLForm;
+  Button1 : TclButton;
+void BirimeGit;
+{
+  Clomosy.RunUnit('uMutfak');
+}
+{
+  Form1 = TCLForm.Create(Self);
+  Button1 = Form1.AddNewButton(Form1,'Button1', 'Birim''e git!');
+  Button1.Width = 100;
+  Form1.AddNewEvent(Button1,tbeOnClick,'BirimeGit');
+  Form1.Run;
+}
