@@ -1,0 +1,18 @@
+void RenkSecici;
+var
+  Renkler: array[0..7] of String; // Renklerin tutulduğu bir dizi
+  RastgeleIndex: Integer;
+{
+  // Renkler dizisini tanımlıyoruz
+  Renkler = ['Kırmızı', 'Mavi', 'Yeşil', 'Mor', 'Sarı', 'Turuncu', 'Kahverengi', 'Pembe'];
+  
+  // Rastgele bir indeks seçiyoruz
+  RastgeleIndex = Random() * Length(Renkler) -1; // 0 ile 8 arasında bir sayı üretilecek 
+  
+  // Seçilen rengi ekrana yazdırıyoruz
+  ShowMessage('Bugünün rengi: ' + Renkler[RastgeleIndex]);
+}
+
+{
+  RenkSecici;
+}

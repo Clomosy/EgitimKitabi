@@ -2,4 +2,4 @@
 
 ### Açıklama
 
-Bir sayı belirleyip bu sayıdan geriye doğru sayarak 1'e kadar olan sayıları ekranda gösteren bir kod yazın.
+Bir sayı belirleyip bu sayıdan geriye doğru sayarak 1'e kadar olan sayıları ekranda gösteren bir kod yazınız.

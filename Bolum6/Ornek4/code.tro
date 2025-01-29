@@ -5,7 +5,7 @@ var
   {
     for Sutun = 1 to 5 //iç döngü
     {
-      // Satir ve Sutun'ye bağlı işlemler
+      // Satir ve Sütun'a bağlı işlemler
       Console.Text(IntToStr(Satir)+'-'+IntToStr(Sutun));
     }
   }

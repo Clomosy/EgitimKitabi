@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir mevsim ismi (ilkbahar, yaz, sonbahar, kış) alıp bu mevsime göre bir mesaj gösteren bir kod yazın.
+Bir mevsim ismi (ilkbahar, yaz, sonbahar, kış) alıp bu mevsime göre bir mesaj gösteren bir kod yazınız.
 
 ![Bolum 5-Soru 5](Bolum5_5.png)

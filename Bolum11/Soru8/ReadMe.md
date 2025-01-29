@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclImage bileşenine tıklandığında bir mesaj kutusu gösterin.
+TclImage bileşenine tıklandığında mesaj kutusu gösteriniz.
 
 ![Bolum 11-Soru 8](Bolum11_8.png)

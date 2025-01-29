@@ -1,0 +1,19 @@
+var
+  SoruVeCevaplar;
+  i, SatirSayisi: Integer;
+{
+  SoruVeCevaplar = VarArrayCreate([0, 2, 0, 1], 12);           
+  // Matris oluşturuluyor.
+  SoruVeCevaplar = [
+  ['2 + 2 kaç eder?', '4'],
+  ['TRObject hangi platformda çalışır?', 'Clomosy'],
+  ['Bir haftada kaç gün vardır?', '7']
+  ];
+  
+  SatirSayisi = Length(SoruVeCevaplar);
+  // Matrisi dolaşarak soru ve cevapları ekrana yazdıralım.
+  for (i = 0 to SatirSayisi - 1)
+  {
+    ShowMessage('Soru: ' + SoruVeCevaplar[i, 0] + ' Cevap: ' + SoruVeCevaplar[i, 1]);
+  }
+}

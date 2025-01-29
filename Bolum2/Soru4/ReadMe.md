@@ -2,8 +2,10 @@
 
 ### Açıklama
 
-Aşağıdaki problemi adım adım çözmek için bir algoritma oluşturun?
--	Bir etkinlik düzenliyorsunuz ve bu etkinlik için belirli bir bütçeniz var. Etkinlikte yer alacak çeşitli aktiviteler var ve her bir aktivitenin bir maliyeti var. Amaç, bütçenizi aşmadan mümkün olduğunca fazla aktivite planlamaktır. (Bütçe oranını oluşturmuş olduğunuz algoritmaya göre belirleyin.)
+Aşağıdaki problemi adım adım çözmek için bir algoritma oluşturunuz?
+-	Bir etkinlik düzenliyorsunuz ve bu etkinlik için belirli bir bütçeniz var. 
+Etkinlikte yer alacak çeşitli aktiviteler var ve her bir aktivitenin bir maliyeti 
+var. Amaç, bütçenizi aşmadan mümkün olduğunca fazla aktivite planlamaktır. (Bütçe oranını oluşturmuş olduğunuz algoritmaya göre belirleyin.)
 
 ### Cevap
 

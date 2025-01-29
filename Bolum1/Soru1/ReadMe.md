@@ -2,7 +2,7 @@
 
 ### Açıklama
 
-Clomosy geliştirici hesabı oluşturma adımlarını sıralayın.
+Clomosy geliştirici hesabı oluşturma adımlarını sıralayınız.
 
 ### Cevap
 

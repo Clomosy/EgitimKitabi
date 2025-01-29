@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclEdit bileşeni oluşturun ve içine bir metin girildiğinde metni bir TclLabel bileşenine yazdırın.
+TclEdit bileşeni oluşturunuz ve içine bir metin girildiğinde metni bir TclLabel bileşenine yazdırınız.
 
 ![Bolum 11-Soru 2](Bolum11_2.png)

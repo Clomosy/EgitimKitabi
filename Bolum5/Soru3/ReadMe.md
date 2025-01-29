@@ -2,10 +2,10 @@
 
 ### Açıklama
 
-Bir vize ve final notu belirlenip geçme notunu hesaplayın. Hesaplanan geçme not aralığına göre bir harf döndüren (A, B, C, D, F) programı yazın.
+Bir vize ve final notu belirlenip geçme notunu hesaplayınız. Hesaplanan geçme not aralığına göre bir harf döndüren (A, B, C, D, F) programı yazınız.
 
 Kurallar:
-* Geçme notu: (VizeNotu * 0.4) + (FinalNotu * 0.6) olarak belirleyin.
+* Geçme notu: (VizeNotu * 0.4) + (FinalNotu * 0.6) olarak belirleyiiz.
 * Hesaplanan not aralıklarına göre harf notları şu şekilde belirlenir:
 	* 90 ve üzeri: A
 	* 80 - 89: B

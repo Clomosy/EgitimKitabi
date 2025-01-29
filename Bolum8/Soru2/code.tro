@@ -1,0 +1,28 @@
+var
+  Sonuc, metin: String;
+function UzunlukKarsilastir(String1, String2: String): Integer;
+{ 
+  // String uzunluklarını karşılaştırıyoruz
+  if (Length(String1) > Length(String2))
+  {
+    metin = String1;
+    Result = 1; // İlk string daha uzunsa onu döndür
+  } else if (Length(String1) < Length(String2))
+  {
+    metin = String2;
+    Result = 2; // Aksi halde ikinci string'i döndür
+  } else 
+  {
+    metin = 'Metin uzunlukları eşittir.';
+    Result = 0;
+  }
+}
+
+{
+  // Örnek stringler
+  Sonuc = UzunlukKarsilastir('Merhaba', 'Dünya!');
+  if (Sonuc == 0)
+  ShowMessage(metin)
+  else 
+  ShowMessage('Daha uzun olan string: ' + metin);
+}

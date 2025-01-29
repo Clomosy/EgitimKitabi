@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir sayı belirleyip bu sayının faktöriyelini hesaplayarak ekranda gösteren bir kod yazın.
+Bir sayı belirleyip bu sayının faktöriyelini hesaplayarak ekranda gösteren bir kod yazınız.
 
 ![Bolum 6-Soru 3](Bolum6_3.png)

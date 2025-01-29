@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclButton bileşenine tıklandığında bir TclLabel bileşenini gizleyin ya da gösterin.
+TclButton bileşenine tıklandığında TclLabel bileşenini gizleyiniz ya da gösteriniz.
 
 ![Bolum 11-Soru 16](Bolum11_16.png)

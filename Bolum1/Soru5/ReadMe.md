@@ -2,7 +2,7 @@
 
 ### Açıklama
 
-Clomosy’nin ‘Ana Kod’ sayfasını bir dosya olarak indirmek için hangi dosya formatı kullanılır ve hangi butona tıklanmalıdır?
+Clomosy’nin ‘Ana Kod’ sayfasını bir dosya olarak indirilirken hangi dosya formatı kullanılır ve hangi butona tıklanmalıdır?
 
 ### Cevap
 

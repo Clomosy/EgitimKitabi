@@ -1,0 +1,16 @@
+var 
+  Dizi: array[0..5] of Integer; // 6 elemanlı bir dizi
+  i, Toplam: Integer;
+{
+  // Dizinin elemanlarına rastgele değerler atama
+  Dizi = [5, 10, 15, 20, 25, 30];
+  
+  // Elemanların toplamını hesaplama
+  Toplam = 0;
+  for (i = 0 to Length(Dizi) - 1) {
+    Toplam = Toplam + Dizi[i];
+  }
+  
+  // Toplamı ekrana yazdırma
+  ShowMessage('Dizinin elemanlarının toplamı: ' + IntToStr(Toplam));
+}

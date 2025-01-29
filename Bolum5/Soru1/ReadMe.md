@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir sayı belirleyip sayının pozitif bir değer olup olmadığını kontrol eden bir kod yazın.
+Bir sayı belirleyip sayının pozitif bir değer olup olmadığını kontrol eden bir kod yazınız.
 
 ![Bolum 5-Soru 1](Bolum5_1.png)

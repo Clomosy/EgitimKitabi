@@ -1,0 +1,11 @@
+var 
+  AnaForm:TclForm;
+{
+  AnaForm=TclForm.Create(Self);
+  TclButton(AnaForm.clFindComponent('BtnFormMenu')).Visible = False;
+  TclButton(AnaForm.clFindComponent('BtnGoBack')).Visible = False;
+  AnaForm.clSetWindowState(fwsMaximized);
+  AnaForm.clSetCaption('Hoş Geldiniz');
+  
+  AnaForm.Run;
+}

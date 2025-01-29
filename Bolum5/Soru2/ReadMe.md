@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir sayı belirleyip sayının çift mi tek mi olduğunu kontrol eden bir kod yazın.
+Bir sayı belirleyip sayının çift mi tek mi olduğunu kontrol eden bir kod yazınız.
 
 ![Bolum 5-Soru 2](Bolum5_2.png)

@@ -1,0 +1,10 @@
+var 
+  kontrol:array[3] of Integer;
+  i:integer;
+{
+  kontrol = [1,2,3];
+  for(i=0 to length(kontrol)-1)
+  {
+      ShowMessage(kontrol[i]);
+  }
+}

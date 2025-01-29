@@ -6,13 +6,12 @@ void AnaKodaGit;
   LblAnaKod.Text = 'Ana Kod -> uMutfak birimden geldi.';
   Form2.clHide;
   CallerForm.clShow;
-  clDoClick(BtnAnaKod);
 }
 {
   Form2 = TCLForm.Create(Self);
   Form2.clSetCaption('uMutfak Birimi');
   Button2 = Form2.AddNewButton(Form2,'Button2', 'Form nesnelerini güncelle!');
-  Button2.Width = 150;
+  Button2.Width = 250;
   Form2.AddNewEvent(Button2,tbeOnClick,'AnaKodaGit');
 
   Form2.Run;

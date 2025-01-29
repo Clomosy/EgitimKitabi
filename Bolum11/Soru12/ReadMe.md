@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclButton bileşenine tıklandığında TclLayout içindeki tüm bileşenlerin boyutunu değiştirin.
+TclButton bileşenine tıklandığında TclLayout içindeki tüm bileşenlerin boyutunu değiştiriniz.
 
 ![Bolum 11-Soru 12](Bolum11_12.png)

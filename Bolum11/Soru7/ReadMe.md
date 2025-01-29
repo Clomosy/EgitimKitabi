@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclButton bileşenine tıklandığında bir TclEdit bileşenindeki metni bir TclLabel bileşenine kopyalayın.
+TclButton bileşenine tıklandığında TclEdit bileşenindeki metni TclLabel bileşenine kopyalayınız.
 
 ![Bolum 11-Soru 7](Bolum11_7.png)

@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclButton bileşenine tıklandığında formu kapatın.
+TclButton bileşenine tıklandığında formu kapatınız.
 
 ![Bolum 11-Soru 13](Bolum11_13.png)

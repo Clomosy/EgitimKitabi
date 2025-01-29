@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclButton bileşenine tıklandığında bir TclPanel içerisindeki tüm bileşenleri gizleyin.
+TclButton bileşenine tıklandığında TclPanel içerisindeki tüm bileşenleri gizleyiniz.
 
 ![Bolum 11-Soru 9](Bolum11_9.png)

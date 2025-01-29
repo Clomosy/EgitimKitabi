@@ -1,0 +1,13 @@
+var
+  Dizi: array[0..9] of Integer;  // 1’den 10’a kadar olan sayıların karelerini tutacak dizi
+  i: Integer;
+{
+  // Dizinin elemanlarına kareleri atama
+  for (i = 0 to 9)
+    Dizi[i] = (i + 1) * (i + 1);
+  
+  // Diziyi ekrana yazdırma
+  ShowMessage('Dizinin elemanları:');
+  for (i = 0 to Length(Dizi) - 1)
+    ShowMessage('dizi[' + IntToStr(i) + '] = ' + IntToStr(Dizi[i]));
+}

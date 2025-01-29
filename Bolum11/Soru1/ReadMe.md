@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclButton bileşeni oluşturun ve üzerine tıklandığında bir mesaj kutusu gösterin.
+TclButton bileşeni oluşturunuz ve üzerine tıklandığında bir mesaj kutusu gösteriniz.
 
 ![Bolum 11-Soru 1](Bolum11_1.png)

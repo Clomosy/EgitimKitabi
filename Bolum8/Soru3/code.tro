@@ -1,0 +1,20 @@
+var
+  Kelime, Sonuc: String;
+  i: Integer;
+{
+  // Kullanıcıdan kelime alıyoruz
+  Kelime = 'kedi';
+  
+  // İlk harf olarak alınan kelimeyi direkt olarak Sonuc'a atıyoruz
+  Sonuc = Kelime[1];
+  
+  // Sonraki harfleri aralarına boşluk koyarak ekliyoruz
+  for (i = 2 to Length(Kelime))
+  {
+    Insert(' ', Sonuc, Length(Sonuc) + 1); // Sonuc'a boşluk ekliyoruz
+    Insert(Kelime[i], Sonuc, Length(Sonuc) + 1); // Harfi ekliyoruz
+  }
+  
+  // Sonucu ekrana yazdırıyoruz
+  ShowMessage(Sonuc);
+}

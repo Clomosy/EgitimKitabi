@@ -2,7 +2,7 @@
 
 ### Açıklama
 
-Bir programlama dilinin söz dizimi hataları nasıl tespit edilir ve düzeltilir?
+Bir programlama dilinin söz dizimi hataları nasıl ortaya çıkar ve düzeltilir?
 
 ### Cevap
 

@@ -2,6 +2,6 @@
 
 ### Açıklama
 
-Bir TclButton bileşenine tıklandığında bir TclEdit bileşenini temizleyin.
+TclButton bileşenine tıklandığında TclEdit bileşenini temizleyiniz.
 
 ![Bolum 11-Soru 14](Bolum11_14.png)

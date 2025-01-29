@@ -2,7 +2,7 @@
 
 ### Açıklama
 
-Bir projeye üye eklemek için hangi bilgilerin gerekli olduğunu açıklayın.
+Bir projeye üye eklemek için hangi bilgilerin gerekli olduğunu açıklayınız.
 
 ### Cevap
 
