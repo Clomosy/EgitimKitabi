@@ -1,9 +1,8 @@
 var
   MyForm : TCLForm;
   MyLayout : TClLayout;
-  PanelIciButon2: TCLLabel;
-  PanelIciButon, BilesenGizleBtn, BilesenBoyutDegistir : TCLButton;
-  
+  PanelIciButon2, PanelIciButon, BilesenBoyutDegistir : TCLButton;
+
 void BilesenBoyutDegistirTikla;
 {
   PanelIciButon.Height = MyLayout.Height / 3;
