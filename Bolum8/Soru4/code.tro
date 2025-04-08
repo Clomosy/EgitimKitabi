@@ -1,0 +1,12 @@
+var
+  Parola, Sonuc: String;
+{
+  Parola = 'sifre123';
+  
+  Sonuc = Parola;
+  
+  Insert('!', Sonuc, Length(Parola) + 1); 
+  Sonuc = AnsiUpperCase(Sonuc);
+  
+  ShowMessage(Sonuc);
+}
